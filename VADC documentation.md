@@ -4,9 +4,11 @@ The VA Data Commons supports the management, and analysis of veteran oncologic d
 
 # Getting Started
 ## **Login Page**
-Users will login with their VA PIV credentials.  Start by visiting the login page (https://va.data-commons.org/login). After successfully logging in, your username will appear in the upper right-hand corner of the page. 
+Users will login with their VA PIV credentials.  Start by visiting the login page (https://va.data-commons.org/login). Sign in with your organizational account and password. After successfully logging in, your username will appear in the upper right-hand corner of the page. 
+Click this link for more information about using the <a href="https://www.oit.va.gov/resources/remote-access/cag/windows/index.cfm?#piv" target="blank">PIV login</a>.
 
 Once logged in, the user will see there are several options in the upper right hand corner of the screen. In the blue bar at the top of the page, there is a link to VA Data Commons Documentation (the page you are currently reading), Email Support, your username and a log out button.  Below these options, there are tabs for the Workspace, the Apps, and the Profile pages.
+Clicking on the VA Data Commons logo in the upper left hand corner of the screen will return you to the home page of the data commons.
 
 ### **VA Data Commons Documentation**
 The button for VA Data Commons Documentation takes you to this page.
@@ -31,13 +33,13 @@ This section of the Profile page lists the projects and the methods of access fo
 
 # Data Access and Analysis
 ## **Workspace**
-Workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. By default, Workspaces include Jupyter notebooks, Python and RStudio, but can be configured to host virtually any application, including analysis workflows, data processing pipelines, or data visualization apps. 
+Workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. By default, Workspaces include Jupyter notebooks and JupyterLab, Python and RStudio, but can be configured to host virtually any application, including analysis workflows, data processing pipelines, or data visualization apps. 
 
 New to Jupyter? Learn more about the popular tool for data scientists on <a href="https://jupyter.org/" target="blank">Jupyter.org</a> (disclaimer: CTDS is not responsible for the content).
 
 [Note - Insert image of workspace page here]: #
 
-There are six workspace options available. The options include four versions of Jupyter Notebook Bio Python and two versions of R Studio. Click "Launch" to spin up a copy of that VM.  Launching may take several minutes depending on the size and complexity of the workspace.  
+There are five workspace options available. The options include two versions of Jupyter Notebook Bio Python/R which employ the classic Jupyter Notebook in two different sizes (one large, 4.0 CPU, 8192 Mi memory, and one small, 0.5 CPU, 512 Mi memory), two versions of Jupyter Notebook Bio Python/R (Lab Edition) which opens JupyterLab, the latest interactive development environment for notebooks, code and data also with the option of two sizes (one large and one small), and one workspace option with R Studio. Click "Launch" to spin up a copy of that VM.  Launching may take several minutes depending on the size and complexity of the workspace.  
 
 Once the VM is ready, the initial screen for the workspace will appear. After launching, the home folders are displayed, one of which is the user's persistent drive ("pd"). For scripts and output that need to be saved when the workspace is terminated, store those files in the pd/ directory. Only files saved in the /pd directory will remain available after termination of a workspace session. 
 
@@ -55,7 +57,8 @@ For more information about the Gen3 Workspace, refer to <a href="https://gen3.or
 The Apps page displays the option of two apps, OHDSI Atlas and Gen3 GWAS.
 
 ### **OHDSI Atlas**
-ATLAS is an open source application developed as a part of <a href="https://www.ohdsi.org/" target="blank" >OHDSI</a> intended to provide a unified interface to patient level data and analytics.
+ATLAS is an open source software application developed as a part of <a href="https://www.ohdsi.org/" target="blank" >OHDSI</a> community intended to provide a unified interface to patient level data and analytics. ATLAS is an open science analytics platform that can be used to perform analyses across one or more observational databases which have been standardized to the OMOP Common Data Model V5 and can facilitate exchange of analysis designs with any other organizations across the OHDSI community who have adopted the same open science community standards and tools. Use the ATLAS app to create cohorts that you can analyze in the Gen3 GWAS app. 
+
 The ATLAS user guide can be found <a href="https://www.ohdsi.org/web/wiki/doku.php?id=documentation:software:atlas" target="blank" >here</a>. (disclaimer: CTDS is not responsible for the content).
 
 ### **Gen3 GWAS**
