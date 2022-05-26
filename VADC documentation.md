@@ -48,23 +48,61 @@ Code blocks are entered in cells, which can be executed individually or all at o
 
 Results, including plots, tables, and graphics, can be generated in the workspace and downloaded as files. Only files saved in the /pd directory will remain available after termination of a workspace session. 
 
-Do not forget to terminate your workspace once your work is finished to be mindful of the cost-intensive computational effort. Note, that Workspaces automatically shut down after 90 minutes of idle time.
+<mark>Do not forget to terminate your workspace once your work is finished to be mindful of the cost-intensive computational effort. Note, that Workspaces automatically shut down after 90 minutes of idle time.</mark>
 
 For more information about the Gen3 Workspace, refer to <a href="https://gen3.org/resources/user/analyze-data/" target="blank">Data Analysis in a Gen3 Data Commons</a>.
 
 
 ## **Apps**
-The Apps page displays the option of two apps, OHDSI Atlas and Gen3 GWAS.
+The Apps page displays the option of two apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to.
 
 ### **OHDSI Atlas**
-ATLAS is an open source software application developed as a part of <a href="https://www.ohdsi.org/" target="blank" >OHDSI</a> community intended to provide a unified interface to patient level data and analytics. ATLAS is an open science analytics platform that can be used to perform analyses across one or more observational databases which have been standardized to the OMOP Common Data Model V5 and can facilitate exchange of analysis designs with any other organizations across the OHDSI community who have adopted the same open science community standards and tools. Use the ATLAS app to create cohorts that you can analyze in the Gen3 GWAS app. 
+ATLAS is an open source software application developed as a part of <a href="https://www.ohdsi.org/" target="blank" >OHDSI</a> community intended to provide a unified interface to patient level data and analytics. 
+
+ATLAS currently includes functionality for searching and navigating the vocabulary within the OMOP Common Data Model (CDM). In addition to the search and navigation capabilities, It also provides features to curate and export custom sets concept identifiers for use in cohort definitions.
+
+ATLAS is an open science analytics platform that can be used to perform analyses across one or more observational databases which have been standardized to the OMOP Common Data Model V5 and can facilitate exchange of analysis designs with any other organizations across the OHDSI community who have adopted the same open science community standards and tools. Use the ATLAS app to create cohorts that you can analyze in the Gen3 GWAS app. 
 
 The ATLAS user guide can be found <a href="https://www.ohdsi.org/web/wiki/doku.php?id=documentation:software:atlas" target="blank" >here</a>. (disclaimer: CTDS is not responsible for the content).
 
 ### **Gen3 GWAS**
 Use this app to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline.
 
-There are five steps to performing a Gen3 GWAS.  Click the Next or Previous box in the lower corners of the screen to navigate between them.
+Genome-wide association studies (GWAS) help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
+
+Here, we offer two types of GWAS analysis- 
+
+Genome-wide association studies (GWAS) for quantitative phenotype. Here, GWAS evaluates statistical association between genetic variation and a continuous phenotype. A phenotype, also called a trait, can be any measured or observed property of an individual. 
+
+Genome-wide association studies (GWAS) for a case-control study. Here, the genotypes of roughly equal number of diseased (“cases”) and healthy (“controls”) people are compared to determine which genetic variants are associated with the disease. Cases are encoded as ‘1’ while controls are encoded as ‘0’ and a binary model is used.
+
+Each of these Gen3 GWAS options are available through the GWAS App, and consist of 5 steps. Between the steps- Click the Next or Previous box in the lower corners of the screen to navigate between them.
+
+
+**GWAS for quantitative phenotype**
+
+**Step 1**
+
+Select the cohort you would like to use for GWAS from the coices in the box on the screen, Diabetes Demo or T1D-cases. (**Note: Need a description of these studies**) Click Next.
+
+**Step 2**
+
+Select harmonized variables for phenotypes and covariates from the table of variables.  The selected variables will be used for both the covariates and the phenotype. Click Next.
+
+**Step 3**
+
+Select which variable is your phenotype from previous choices. Click Next.
+
+**Step 4**
+
+Set workflow parameters and remove unwanted covariates. Click Next.
+
+**Step 5**
+
+Submit GWAS job. Click the Sumit button.
+
+
+**GWAS for a case-control study**
 
 **Step 1**
 
