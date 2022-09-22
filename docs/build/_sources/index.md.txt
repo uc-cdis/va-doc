@@ -2,6 +2,24 @@
 The Veterans Affairs (VA) Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.
 <br>  
 
+## Table of Content
+
+- [**VA Data Commons**](#va-data-commons)
+  - [Table of Content](#table-of-content)
+- [Getting Started](#getting-started)
+  - [**Login Page**](#login-page)
+    - [**VA Data Commons Documentation**](#va-data-commons-documentation)
+    - [**Email Support**](#email-support)
+  - [**Profile Page**](#profile-page)
+    - [**API key(s)**](#api-keys)
+- [Data Access and Analysis](#data-access-and-analysis)
+  - [**Workspace**](#workspace)
+  - [**Apps**](#apps)
+    - [**OHDSI Atlas**](#ohdsi-atlas)
+    - [**Gen3 GWAS**](#gen3-gwas)
+    - [**GWAS for quantitative phenotype**](#gwas-for-quantitative-phenotype)
+    - [**GWAS for a case-control study**](#gwas-for-a-case-control-study)
+
 # Getting Started
 ## **Login Page**
 Users will login with their VA PIV credentials. Start by visiting the login page (https://va.data-commons.org/login) and sign in with your organizational account. After successfully logging in, your username will appear in the upper right-hand corner of the page. Click this link for more information about using the <a href="https://www.oit.va.gov/resources/remote-access/cag/windows/index.cfm?#piv" target="blank">PIV login</a>.
