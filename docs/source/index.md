@@ -79,7 +79,7 @@ For more information about the Gen3 Workspace, refer to [Data Analysis in a Gen3
 The [Apps page](https://va.data-commons.org/analysis) displays the option of two apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
 
 ## **OHDSI Atlas**
-ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software us used to define cohorts, typically dichotomous variables, for analysis.
+ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
 
 ATLAS currently includes functionality for searching and navigating the vocabulary within the OMOP Common Data Model (CDM). In addition to the search and navigation capabilities, it also provides features to curate and export custom sets of concept identifiers for use in cohort definitions. These will automatically populate on the Gen3 GWAS App.
 In general, ATLAS is an analytics platform that can be used to perform analyses across one or more observational databases which have been standardized to the OMOP Common Data Model V5 and can facilitate exchange of analysis designs with any other organizations across the OHDSI community.
@@ -108,11 +108,17 @@ Enter the concept name or code into the search bar to find relevant concept vari
 
 ![](_static/slide_14.png)
 
-Select desired concepts, click “Add To Concept Set”. Repat Search and Add steps as needed, then click “Concept Sets”.
+Select desired concepts, click “Add To Concept Set”. Repeat Search and Add steps as needed, then click “Concept Sets”.
 
 ![](_static/slide_15.png)
 
 Make sure all desired concepts are included, then click the save icon to the right of the name of the Concept Set.
+
+To add new concepts, please use the “Add Concepts” button again as described above.
+
+![](_static/atlas_remove_concepts.png)
+
+To delete the concepts from the concept set, select the concepts and click on the “Remove Selected” button, then click the save icon to save your changes.
 
 **Step 2 Create Cohort Definition**
 
@@ -162,7 +168,11 @@ To complete the creation of the Cohort Definition, click “Generation”, then 
 
 Cohort size will be displayed under the column “People”. Use View Reports to see if you have inclusion criteria that causes cohort attrition.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at- craig.teerlink@va.gov
+![](_static/atlas_export_cohort.png)
+
+The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
+
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at craig.teerlink@va.gov
 
 ## **Gen3 GWAS**
 Use this app to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline.
