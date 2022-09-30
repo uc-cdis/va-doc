@@ -30,5 +30,5 @@ Documentation for VA is usually written in a markdown or google drive file. The 
 5. Merge the changes into master
 6. Hop into the corresponding enviorment and run these commands:
 - ```cd cdis-manifest``` to switch to the manifest folder
-- ```git pull``` to get the laterst changes
+- ```git pull``` to get the latest changes
 - ```gen3 dashboard gitops-sync``` for documentation to be uploaded.
