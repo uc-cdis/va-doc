@@ -23,10 +23,12 @@ Documentation for VA is usually written in a markdown or google drive file. The 
 
 ## Adding generated documentation to qa/preprod/prod
 
-1. Navigate to the corosponding manifest repo. [here](https://github.com/uc-cdis/gitops-qa) for qa and [here](https://github.com/uc-cdis/cdis-manifest) for preprod/prod
-2. Go to the corosponding documentation repo for the data commons we're updating documentation for. Example: for preprod this would be **va-testing.data-commons.org/dashboard/Public/documentation**
+1. Navigate to the corresponding manifest repo. [here](https://github.com/uc-cdis/gitops-qa) for qa and [here](https://github.com/uc-cdis/cdis-manifest) for preprod/prod
+2. Go to the corresponding documentation repo for the data commons we're updating documentation for. Example: for preprod this would be **va-testing.data-commons.org/dashboard/Public/documentation**
 3. Remove all current files in there via ```rm -rf *```
 4. Now copy all files from **va-doc/docs/build** into the documentation directory
 5. Merge the changes into master
-6. Hop into the corosponding enviorment and run ```gen3 dashboard gitops-sync``` for documentation to be uploaded.
-7. Reroll portal via ```gen3 kube-setup-portal``` to reroll portal and documentations to be viewable via portal 
+6. Hop into the corresponding enviorment and run these commands:
+- ```cd cdis-manifest``` to switch to the manifest folder
+- ```git pull``` to get the latest changes
+- ```gen3 dashboard gitops-sync``` for documentation to be uploaded.
