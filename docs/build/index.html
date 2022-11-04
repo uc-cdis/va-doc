@@ -54,16 +54,10 @@ Documentation</a></p></li>
 <li><p><a class="reference external" href="#email-support">Email Support</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="#profile-page">Profile Page</a></p>
-<ul>
-<li><p><a class="reference external" href="#api-keys">API key(s)</a></p></li>
-</ul>
-</li>
 </ul>
 </li>
 <li><p><a class="reference external" href="#data-access-and-analysis">Data Access and Analysis</a></p>
 <ul>
-<li><p><a class="reference external" href="#workspace">Workspace</a></p></li>
 <li><p><a class="reference external" href="#apps">Apps</a></p></li>
 <li><p><a class="reference external" href="#ohdsi-atlas">OHDSI Atlas</a></p>
 <ul>
@@ -109,77 +103,9 @@ to our help desk at <a class="reference external" href="mailto:support&#37;&#52;
 within 2 business days.</p>
 </div>
 </div>
-<div class="section" id="profile-page">
-<h2><strong>Profile Page</strong><a class="headerlink" href="#profile-page" title="Permalink to this heading">¶</a></h2>
-<p>On the <a class="reference external" href="https://va.data-commons.org/identity">Profile page</a> you can
-create and save your API key.</p>
-<!---
-[Note - Insert image of profile page here]: #
---><div class="section" id="api-key-s">
-<h3><strong>API key(s)</strong><a class="headerlink" href="#api-key-s" title="Permalink to this heading">¶</a></h3>
-<p>To download large amounts of data, an <a class="reference external" href="https://va.data-commons.org/identity">API
-key</a> will be required as a part
-of the <a class="reference external" href="https://gen3.org/resources/user/gen3-client/">gen3-client</a>.
-To create a key on your local machine, click Create API key, which will
-activate a pop-up window.</p>
-<!---
-[Note - Insert image of create API Key here]: #
---><p>Click Download json to save the credential file to your local machine.
-After completion, a new entry will appear in the API key(s) section of
-the Profile page. It will display the API key key_id and the expiration
-date (one month after the key creation). The user should delete the key
-after it has expired and create a new key. If for any reason a user
-feels that their API key has been compromised, the key should be deleted
-before subsequently creating a new one.</p>
-</div>
-</div>
 </div>
 <div class="section" id="data-access-and-analysis">
 <h1>Data Access and Analysis<a class="headerlink" href="#data-access-and-analysis" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="workspace">
-<h2><strong>Workspace</strong><a class="headerlink" href="#workspace" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference external" href="https://va.data-commons.org/workspace">Workspaces</a> are secure data
-analysis environments in the cloud that can access data from one or more
-data resources. By default, Workspaces include Jupyter notebooks and
-JupyterLab, Python and RStudio, but can be configured to host virtually
-any application, including analysis workflows, data processing
-pipelines, or data visualization apps.</p>
-<p>New to Jupyter? Learn more about the popular tool for data scientists on
-<a class="reference external" href="https://jupyter.org/">Jupyter.org</a> (disclaimer: CTDS is not
-responsible for the content).</p>
-<!---
-[Note - Insert image of workspace page here]: #
---><p>There are five workspace options available. The options include two
-versions of Jupyter Notebook Bio Python/R which employ the classic
-Jupyter Notebook in two different sizes (one large, 4.0 CPU, 8192 Mi
-memory, and one small, 0.5 CPU, 512 Mi memory), two versions of Jupyter
-Notebook Bio Python/R (Lab Edition) which opens JupyterLab, the latest
-interactive development environment for notebooks, code and data also
-with the option of two sizes (one large and one small), and one
-workspace option with R Studio. Click “Launch” to spin up a copy of that
-VM. Launching may take several minutes depending on the size and
-complexity of the workspace.</p>
-<p>Once the VM is ready, the initial screen for the workspace will appear.
-After launching, the home folders are displayed, one of which is the
-user’s persistent drive (“pd”). For scripts and output that need to be
-saved when the workspace is terminated, store those files in the pd/
-directory. Only files saved in the /pd directory will remain available
-after termination of a workspace session.</p>
-<p>Start a new notebook by clicking “New” in the top right corner and
-choose between Python 3 or R Studio as the base programmatic language.
-Code blocks are entered in cells, which can be executed individually or
-all at once. Code documentation and comments can also be entered in
-cells, and the cell type can be set to support Markdown.</p>
-<p>Results, including plots, tables, and graphics, can be generated in the
-workspace and downloaded as files. Only files saved in the /pd directory
-will remain available after termination of a workspace session.</p>
-<p>Do not forget to terminate your workspace once your work is finished to
-be mindful of the cost-intensive computational effort. Note, that
-Workspaces automatically shut down after 15 minutes of idle time.</p>
-<p>For more information about the Gen3 Workspace, refer to <a class="reference external" href="https://gen3.org/resources/user/analyze-data/">Data Analysis
-in a Gen3 Data
-Commons</a>.</p>
-</div>
 <div class="section" id="apps">
 <h2><strong>Apps</strong><a class="headerlink" href="#apps" title="Permalink to this heading">¶</a></h2>
 <p>The <a class="reference external" href="https://va.data-commons.org/analysis">Apps page</a> displays the
