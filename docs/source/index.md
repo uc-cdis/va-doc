@@ -10,6 +10,7 @@ The Veterans Affairs (VA) Data Commons supports the research and analysis of US 
     - [**VA Data Commons Documentation**](#va-data-commons-documentation)
     - [**Email Support**](#email-support)
 - [Data Access and Analysis](#data-access-and-analysis)
+  - [**Workspace**](#workspace)
   - [**Apps**](#apps)
   - [**OHDSI Atlas**](#ohdsi-atlas)
     - [**Steps to Generate a Cohort**](#steps-to-generate-a-cohort)
@@ -32,6 +33,9 @@ The button for VA Data Commons Documentation takes you to this page.
 If you need help, the Email Support button allows you to send a message to our help desk at support@datacommons.io. You may expect a response within 2 business days.
 
 # Data Access and Analysis
+## **Workspace**
+Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
+
 ## **Apps**
 The [Apps page](https://va.data-commons.org/analysis) displays the option of two apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
 
