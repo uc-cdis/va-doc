@@ -199,11 +199,11 @@ Please review the created covariates. You may remove unwanted covariates, or go 
 Phenotype-
 Please see here the phenotype chosen in step 3. To adjust please go back (at the bottom of the page) to step 3 to choose a different one.
 
-MAF Cutoff-
-Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
-
 Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu-
 Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections.
+
+MAF Cutoff-
+Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
 
 Imputation Score Cutoff-
 This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1)
