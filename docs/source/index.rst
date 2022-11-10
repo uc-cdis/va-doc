@@ -25,6 +25,7 @@ Table of Contents
 
 -  `Data Access and Analysis <#data-access-and-analysis>`__
 
+   -  `Workspace <#workspace>`__
    -  `Apps <#apps>`__
    -  `OHDSI Atlas <#ohdsi-atlas>`__
 
@@ -32,10 +33,22 @@ Table of Contents
 
    -  `Gen3 GWAS <#gen3-gwas>`__
    -  `Genome-Wide Association Studies (GWAS) for Quantitative
-      Phenotype. <#genome-wide-association-studies-gwas-for-quantitative-phenotype>`__
+      Phenotype <#genome-wide-association-studies-gwas-for-quantitative-phenotype>`__
    -  `Genome-wide association studies (GWAS) for a case-control
-      study. <#genome-wide-association-studies-gwas-for-a-case-control-study>`__
+      study <#genome-wide-association-studies-gwas-for-a-case-control-study>`__
    -  `GWAS Results <#gwas-results>`__
+
+-  `Frequently Asked Questions <#frequently-asked-questions>`__
+
+   -  `Where can I find more documentation on the OHDSI Atlas
+      app? <#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app>`__
+   -  `What are harmonized
+      variables? <#what-are-harmonized-variables>`__
+   -  `What will be included in the downloadable package at the end of a
+      GWAS? <#what-will-be-included-in-the-downloadable-package-at-the-end-of-a-gwas>`__
+   -  `How long will my GWAS take? <#how-long-will-my-gwas-take>`__
+   -  `Why does the workspaces page give me an
+      error? <#why-does-the-workspaces-page-give-me-an-error>`__
 
 Getting Started
 ===============
@@ -74,11 +87,24 @@ within 2 business days.
 Data Access and Analysis
 ========================
 
+**Workspace**
+-------------
+
+Currently, workspaces are not available, and therefore you may see an
+error when attempting to log into this page. Generally, workspaces are
+secure data analysis environments in the cloud that can access data from
+one or more data resources. Workspaces may include Jupyter notebooks and
+JupyterLab, Python and RStudio. For more information about the Gen3
+Workspace, you may refer to `Gen3
+Workspaces <https://gen3.org/products/workspaces/>`__ and `Data Analysis
+in a Gen3 Data
+Commons <https://gen3.org/resources/user/analyze-data/>`__.
+
 **Apps**
 --------
 
 The `Apps page <https://va.data-commons.org/analysis>`__ displays the
-option of two apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user
+option of two Apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user
 may perform a genomic analysis on available data from projects that they
 have access to.
 
@@ -214,7 +240,7 @@ complete the Cohort Definition, click the green Save icon.
 Once created, the cohort can then serve as the basis of inputs for your
 subsequent analyses. Use the cohort definition to identify how many
 people are in the cohort. This is the initial number that will be used
-in the GWAS app when this cohort is selected.
+in the GWAS App when this cohort is selected.
 
 .. image:: _static/slide_26.png
 
@@ -239,8 +265,11 @@ please contact us for consultation at craig.teerlink@va.gov
 **Gen3 GWAS**
 -------------
 
-Use this app to perform a high throughput GWAS on MVP data using the
-University of Washington Genesis pipeline.
+Use this App to perform a high throughput GWAS on MVP data using the
+University of Washington Genesis pipeline. For more information about
+the Genesis pipeline please refer to the publication `“Genetic
+association testing using the GENESIS R/Bioconductor
+package” <https://doi.org/10.1093/bioinformatics/btz567>`__.
 
 Genome-wide association studies (GWAS) help scientists identify genes
 associated with a particular disease (or another trait). This method
@@ -250,9 +279,9 @@ or SNPs (pronounced “snips”).
 
 We offer two types of GWAS analysis-
 
-**Genome-wide association studies (GWAS) for quantitative phenotype.**
+**Genome-wide association studies (GWAS) for quantitative phenotype**
 
-**Genome-wide association studies (GWAS) for a case-control study.**
+**Genome-wide association studies (GWAS) for a case-control study**
 
 Each of these Gen3 GWAS options are available through the GWAS App, and
 consists of several steps. To navigate between the steps, click the Next
@@ -269,8 +298,8 @@ explanations on different parts of the page.
 When entering the App, a user must first select the type of GWAS from
 the choices in the box on the screen.
 
-**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype.**
-----------------------------------------------------------------------
+**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**
+---------------------------------------------------------------------
 
 Here, GWAS evaluates the statistical association between genetic
 variation and a continuous phenotype. A phenotype, also called a trait,
@@ -294,9 +323,11 @@ the OHDSI Atlas App.
 **Step 2 Select harmonized variables for phenotypes and covariates**
 
 In this step, you will select the harmonized variables for your study.
-Please select all variables you wish to use in your model, including
-both covariates and phenotype. (Note:- population PCs are not included
-in this step)
+GWAS App provides over 5,000 variables for your selection, for example,
+height, weight, blood pressure, white blood cell, and other clinical
+observations. Please select all variables you wish to use in your model,
+including both covariates and phenotype. (Note:- population PCs are not
+included in this step)
 
 You may choose as many variables as you wish in this step, with a
 minimum of one, that will represent your outcome phenotype. You may
@@ -360,15 +391,14 @@ Phenotype- Please see here the phenotype chosen in step 3. To adjust
 please go back (at the bottom of the page) to step 3 to choose a
 different one.
 
+Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu- Please
+choose the ancestry population on which you would like to perform your
+study. The numbers appearing in the dropdown represent the population
+size of your study, considering all of your previous selections.
+
 MAF Cutoff- Minor allele frequency (MAF) is the frequency at which the
 second most common allele occurs in a given population and can be used
 to filter out rare markers (scale of 0-0.5)
-
-HARE dropdown menu- Please choose the ancestry population on which you
-would like to perform your study. The numbers appearing in the dropdown
-represent the population size of your study, considering all of your
-previous selections. The codes are the HARE (Hharmonized Aancestry and
-Rrace/Eethnicity) codes.
 
 Imputation Score Cutoff- This value reflects the quality of imputed SNPs
 and can be used to remove low-quality imputed markers (scale of 0-1)
@@ -384,8 +414,8 @@ changes please go back to the relevant step.
 Once your GWAS analysis is submitted, you can check the submission
 status and review the results in the “GWAS Results” App.
 
-**Genome-wide association studies (GWAS) for a case-control study.**
---------------------------------------------------------------------
+**Genome-wide association studies (GWAS) for a case-control study**
+-------------------------------------------------------------------
 
 Here, the genotypes of a roughly equal number of diseased (“cases”) and
 healthy (“controls”) people are compared to determine which genetic
@@ -425,13 +455,15 @@ OHDSI Atlas App.
 
 **Step 3 Select harmonized variables for covariates**
 
-In this step, you may select covariates for your study. This step is
-optional, and you may choose not to add any covariate at all. Please
-choose as many covariates as you wish, you may remove them later in the
-pipeline. Currently, only continuous covariates are presented. All
-variables are harmonized. To browse the table please scroll down to the
-bottom. To search the table please enter free text in the search box to
-search by cohort name.
+In this step, you may select covariates for your study. GWAS App
+provides over 5,000 variables for your selection, for example, height,
+weight, blood pressure, white blood cell, and other clinical
+observations. This step is optional, and you may choose not to add any
+covariate at all. Please choose as many covariates as you wish, you may
+remove them later in the pipeline. Currently, only continuous covariates
+are presented. All variables are harmonized. To browse the table please
+scroll down to the bottom. To search the table please enter free text in
+the search box to search by cohort name.
 
 **Step 4 Assess % missing in selected covariates**
 
@@ -476,21 +508,15 @@ Dichotomous Covariates- Please review the created covariates. You may
 remove unwanted covariates, or go back (at the bottom of the page) to
 step 4 to adjust/add different ones.
 
-HARE dropdowns- Please choose the ancestry population on which you would
-like to perform your study. The numbers appearing in the dropdown
-represent the population size of your study, considering all of your
-previous selections. The codes are the HARE (harmonized ancestry and
-race/ethnicity) codes.
+Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu- Please
+choose the ancestry population on which you would like to perform your
+study. The numbers appearing in the dropdown represent the population
+size of your study, considering all of your previous selections. HARE
+dropdowns-
 
 MAF Cutoff- Minor allele frequency (MAF) is the frequency at which the
 second most common allele occurs in a given population and can be used
 to filter out rare markers (scale of 0-0.5)
-
-HARE dropdowns- Please choose the ancestry population on which you would
-like to perform your study. The numbers appearing in the dropdown
-represent the population size of your study, considering all of your
-previous selections. The codes are the HARE (harmonized ancestry and
-race/ethnicity) codes.
 
 Imputation Score Cutoff- This value reflects the quality of imputed SNPs
 and can be used to remove low-quality imputed markers (scale of 0-1)
@@ -503,7 +529,7 @@ name to the study, and submit the GWAS for analysis.
 **Check Submission Status and Review Results**
 
 Once your GWAS analysis is submitted, you can check the Submission
-Status and Review the Results in the “GWAS Results” app.
+Status and Review the Results in the “GWAS Results” App.
 
 **GWAS Results**
 ----------------
@@ -512,10 +538,85 @@ Use this App to view the status & results of submitted workflows. Click
 the arrow in the Submitted Job Statuses box to activate the drop down
 menu and see the status of your analysis. This menu will display a
 history of your submitted jobs including the Run ID of your analysis,
-the start time, and the finish time when the run is completed. This menu
-will also display whether the analysis was a success or failed. Once
-completed, you may download the results of the GWAS analysis from this
-menu. By pressing the ‘Download’ link a tar.gz file will start
-downloading to your computer. The file contains the following: Manhattan
-plot, QQ plot, metadata file containing all of your selections,
-attrition tables, and per-chromosome GWAS summary statistics.
+the start time, and the finish time when the run is completed. The menu
+will also show the status of your analysis:
+
+-  Pending - your analysis was placed in the queue to run, depending on
+   the length of the queue your analysis could start in the range of
+   several minutes to several hours
+-  In Progress - your analysis is started and running, depending on your
+   selection of cohort and variables it could finish in the range of
+   half an hour to three hours
+-  Failed - your analysis returned the error, it is advised to
+   review/change your GWAS parameters or contact our help desk at
+   support@datacommons.io
+-  Completed - your analysis was successfully completed and you may
+   download the results of the GWAS analysis from this menu
+
+Once completed, you may download the results of the GWAS analysis from
+this menu. By pressing the ‘Download’ link a tar.gz file will start
+downloading to your computer. Depending on your cohort and variables
+selection, the file size can vary in the range of 700MB up to 1.3GB. The
+file contains the following: Manhattan plot, QQ plot, metadata file
+containing all of your selections, attrition tables, and per-chromosome
+GWAS summary statistics.
+
+Frequently Asked Questions
+==========================
+
+**Where can I find more documentation on the OHDSI Atlas app?**
+---------------------------------------------------------------
+
+ATLAS was developed and is maintained by the OHDSI community. Tutorials
+for the ATLAS tool can be found
+`here <https://github.com/OHDSI/Atlas/wiki>`__ and the book about the
+OHDSI can be found `here <https://ohdsi.github.io/TheBookOfOhdsi/>`__.
+These resources contain a lot of useful information, particularly you
+might find it useful to read about `Cohort
+Definition <https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts>`__.
+If you need help, please reach out to our help desk at
+support@datacommons.io
+
+**What are harmonized variables?**
+----------------------------------
+
+Data harmonization is the process of defining terms across different but
+similar projects. It helps to avoid inconsistencies in data reporting
+and makes it easier to find and analyze data. For example, different
+studies can have their unique names for the variable “date a participant
+enrolled”, like “index date”, “date of enrollment”, or “AnchorDate”.
+Those variables are harmonized, or mapped, to a single harmonized
+variable “enrollment date”.
+
+**What will be included in the downloadable package at the end of a GWAS?**
+---------------------------------------------------------------------------
+
+The package contains the following: Manhattan plot, QQ plot, metadata
+file containing all of your selections, attrition tables, and
+per-chromosome GWAS summary statistics.
+
+**How long will my GWAS take?**
+-------------------------------
+
+You may check the status of your analysis in the “GWAS Results” App.
+After you submit your analysis, it will be placed in the queue to run.
+The “GWAS Results” App will show the “Pending” status for your submitted
+analysis. Depending on the length of the queue, your analysis could
+start in the range of several minutes to several hours. After the
+analysis starts to run, the status will be changed to “In Progress”.
+Depending on your selection of cohort and variables, it could finish in
+the range of half an hour to three hours. You may close your browser
+after you submit the analysis.
+
+**Why does the workspaces page give me an error?**
+--------------------------------------------------
+
+Currently, workspaces are not available, and therefore you may see an
+error when attempting to log into this page. Generally, workspaces are
+secure data analysis environments in the cloud that can access data from
+one or more data resources. Workspaces may include Jupyter notebooks and
+JupyterLab, Python and RStudio. For more information about the Gen3
+Workspace, you may refer to `Gen3
+Workspaces <https://gen3.org/products/workspaces/>`__ and `Data Analysis
+in a Gen3 Data
+Commons <https://gen3.org/resources/user/analyze-data/>`__.
