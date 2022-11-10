@@ -235,7 +235,7 @@ You may also see a button to create a new cohort. This button will open a new ta
 
 **Step 3 Select harmonized variables for covariates**
 
-In this step, you may select covariates for your study. This step is optional, and you may choose not to add any covariate at all. Please choose as many covariates as you wish, you may remove them later in the pipeline. Currently, only continuous covariates are presented. All variables are harmonized. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
+In this step, you may select covariates for your study. GWAS app provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. This step is optional, and you may choose not to add any covariate at all. Please choose as many covariates as you wish, you may remove them later in the pipeline. Currently, only continuous covariates are presented. All variables are harmonized. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
 
 **Step 4 Assess % missing in selected covariates**
 
@@ -260,14 +260,12 @@ Please review the chosen covariates. You may remove unwanted covariates, or go b
 Dichotomous Covariates-
 Please review the created covariates. You may remove unwanted covariates, or go back (at the bottom of the page) to step 4 to adjust/add different ones.
 
+Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu-
+Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections.
 HARE dropdowns-
-Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections. The codes are the HARE (harmonized ancestry and race/ethnicity) codes.
 
 MAF Cutoff-
 Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
-
-HARE dropdowns-
-Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections. The codes are the HARE (harmonized ancestry and race/ethnicity) codes.
 
 Imputation Score Cutoff-
 This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1)
