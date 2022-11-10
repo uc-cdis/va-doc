@@ -30,7 +30,8 @@ Clicking on the VA Data Commons logo in the upper left hand corner of the screen
 The button for VA Data Commons Documentation takes you to this page.
 
 ### **Email Support**
-If you need help, the Email Support button allows you to send a message to our help desk at support@datacommons.io. You may expect a response within 2 business days.
+If you need help, the Email Support button allows you to send a message to our help desk at [support@datacommons.io](mailto:support@datacommons.io). You may expect a response within 2 business days.
+
 
 # Data Access and Analysis
 ## **Workspace**
