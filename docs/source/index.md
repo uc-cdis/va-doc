@@ -38,7 +38,7 @@ If you need help, the Email Support button allows you to send a message to our h
 Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
 
 ## **Apps**
-The [Apps page](https://va.data-commons.org/analysis) displays the option of two apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
+The [Apps page](https://va.data-commons.org/analysis) displays the option of two Apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
 
 ## **OHDSI Atlas**
 ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
@@ -122,7 +122,7 @@ If you would like to add additional inclusion criteria, click “New inclusion c
 **Step 3 Generate Cohort**
 
 Once created, the cohort can then serve as the basis of inputs for your subsequent analyses. Use the cohort definition to identify how many
-people are in the cohort. This is the initial number that will be used in the GWAS app when this cohort is selected.
+people are in the cohort. This is the initial number that will be used in the GWAS App when this cohort is selected.
 
 ![](_static/slide_26.png)
 
@@ -137,7 +137,7 @@ The “Export” tab provides a text version of how a cohort was created. Click 
 We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at craig.teerlink@va.gov
 
 ## **Gen3 GWAS**
-Use this app to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
+Use this App to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
 
 Genome-wide association studies (GWAS) help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
 
@@ -168,7 +168,7 @@ You may also see a button to create a new cohort. This button will open a new ta
 
 **Step 2 Select harmonized variables for phenotypes and covariates**
 
-In this step, you will select the harmonized variables for your study. GWAS app provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all variables you wish to use in your model, including both covariates and phenotype. (Note:- population PCs are not included in this step)
+In this step, you will select the harmonized variables for your study. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all variables you wish to use in your model, including both covariates and phenotype. (Note:- population PCs are not included in this step)
 
 You may choose as many variables as you wish in this step, with a minimum of one, that will represent your outcome phenotype. You may remove them later in the pipeline. Currently, only continuous variables can be selected. To browse the table, please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
 
@@ -236,7 +236,7 @@ You may also see a button to create a new cohort. This button will open a new ta
 
 **Step 3 Select harmonized variables for covariates**
 
-In this step, you may select covariates for your study. GWAS app provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. This step is optional, and you may choose not to add any covariate at all. Please choose as many covariates as you wish, you may remove them later in the pipeline. Currently, only continuous covariates are presented. All variables are harmonized. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
+In this step, you may select covariates for your study. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. This step is optional, and you may choose not to add any covariate at all. Please choose as many covariates as you wish, you may remove them later in the pipeline. Currently, only continuous covariates are presented. All variables are harmonized. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
 
 **Step 4 Assess % missing in selected covariates**
 
@@ -277,7 +277,7 @@ In this step, you may review the metadata selected for the study, give a name to
 
 **Check Submission Status and Review Results**
 
-Once your GWAS analysis is submitted, you can check the Submission Status and Review the Results in the “GWAS Results” app.
+Once your GWAS analysis is submitted, you can check the Submission Status and Review the Results in the “GWAS Results” App.
 
 ## **GWAS Results**
 
