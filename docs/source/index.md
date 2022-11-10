@@ -281,4 +281,11 @@ Once your GWAS analysis is submitted, you can check the Submission Status and Re
 
 ## **GWAS Results**
 
-Use this App to view the status & results of submitted workflows. Click the arrow in the Submitted Job Statuses box to activate the drop down menu and see the status of your analysis. This menu will display a history of your submitted jobs including the Run ID of your analysis, the start time, and the finish time when the run is completed. This menu will also display whether the analysis was a success or failed. Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+Use this App to view the status & results of submitted workflows. Click the arrow in the Submitted Job Statuses box to activate the drop down menu and see the status of your analysis. This menu will display a history of your submitted jobs including the Run ID of your analysis, the start time, and the finish time when the run is completed. The menu will also show the status of your analysis:
+
+* Pending - your analysis was placed in the queue to run, depending on the length of the queue your analysis could start in the range of several minutes to several hours
+* In Progress - your analysis is started and running, depending on your selection of cohort and variables it could finish in the range of half an hour to three hours
+* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact help at  [support@datacommons.io](mailto:support@datacommons.io)
+* Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
+
+Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
