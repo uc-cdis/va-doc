@@ -15,8 +15,8 @@ The Veterans Affairs (VA) Data Commons supports the research and analysis of US 
   - [**OHDSI Atlas**](#ohdsi-atlas)
     - [**Steps to Generate a Cohort**](#steps-to-generate-a-cohort)
   - [**Gen3 GWAS**](#gen3-gwas)
-  - [**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype.**](#genome-wide-association-studies-gwas-for-quantitative-phenotype)
-  - [**Genome-wide association studies (GWAS) for a case-control study.**](#genome-wide-association-studies-gwas-for-a-case-control-study)
+  - [**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**](#genome-wide-association-studies-gwas-for-quantitative-phenotype)
+  - [**Genome-wide association studies (GWAS) for a case-control study**](#genome-wide-association-studies-gwas-for-a-case-control-study)
   - [**GWAS Results**](#gwas-results)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
@@ -149,9 +149,9 @@ Genome-wide association studies (GWAS) help scientists identify genes associated
 
 We offer two types of GWAS analysis-
 
-**Genome-wide association studies (GWAS) for quantitative phenotype.**
+**Genome-wide association studies (GWAS) for quantitative phenotype**
 
-**Genome-wide association studies (GWAS) for a case-control study.**
+**Genome-wide association studies (GWAS) for a case-control study**
 
 Each of these Gen3 GWAS options are available through the GWAS App, and consists of several steps. To navigate between the steps, click the Next or Previous box in the lower corners of the screen.
 
@@ -161,7 +161,7 @@ For more information about the web functionality of each step, please refer to t
 
 When entering the App, a user must first select the type of GWAS from the choices in the box on the screen.
 
-## **Genome-Wide Association Studies (GWAS) for Quantitative Phenotype.**
+## **Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**
 Here, GWAS evaluates the statistical association between genetic variation and a continuous phenotype. A phenotype, also called a trait, can be any measured or observed property of an individual.
 
 > :Tip: On each step of the workflow there is a tutorial, please click the icon to navigate through the tutorial 
@@ -223,7 +223,7 @@ In this step, you may review the metadata selected for the study, give a name to
 
 Once your GWAS analysis is submitted, you can check the submission status and review the results in the “GWAS Results” App.
 
-## **Genome-wide association studies (GWAS) for a case-control study.**
+## **Genome-wide association studies (GWAS) for a case-control study**
 Here, the genotypes of a roughly equal number of diseased (“cases”) and healthy (“controls”) people are compared to determine which genetic variants are associated with the disease. Cases are encoded as ‘1’ while controls are encoded as ‘0’ and a binary model is used.
 
 > :Tip: On each step of the workflow there is a tutorial, please click the icon to navigate through the tutorial 
