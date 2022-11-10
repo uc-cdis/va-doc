@@ -18,6 +18,12 @@ The Veterans Affairs (VA) Data Commons supports the research and analysis of US 
   - [**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype.**](#genome-wide-association-studies-gwas-for-quantitative-phenotype)
   - [**Genome-wide association studies (GWAS) for a case-control study.**](#genome-wide-association-studies-gwas-for-a-case-control-study)
   - [**GWAS Results**](#gwas-results)
+- [Frequently Asked Questions](#frequently-asked-questions)
+  - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
+  - [**What are harmonized variables?**](#what-are-harmonized-variables)
+  - [**What will be included in the downloadable package at the end of a GWAS?**](#what-will-be-included-in-the-downloadable-package-at-the-end-of-a-gwas)
+  - [**How long will my GWAS take?**](#how-long-will-my-gwas-take)
+  - [**Why does the workspaces page give me an error?**](#why-does-the-workspaces-page-give-me-an-error)
 
 # Getting Started
 ## **Login Page**
@@ -289,3 +295,25 @@ Use this App to view the status & results of submitted workflows. Click the arro
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
 Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+
+# Frequently Asked Questions
+
+## **Where can I find more documentation on the OHDSI Atlas app?**
+
+ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [support@datacommons.io](mailto:support@datacommons.io)
+
+## **What are harmonized variables?**
+
+Data harmonization is the process of defining terms across different but similar projects. It helps to avoid inconsistencies in data reporting and makes it easier to find and analyze data. For example, different studies can have their unique names for the variable “date a participant enrolled”, like “index date”, “date of enrollment”, or “AnchorDate”. Those variables are harmonized, or mapped, to a single harmonized variable “enrollment date”.
+
+## **What will be included in the downloadable package at the end of a GWAS?**
+
+The package contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+
+## **How long will my GWAS take?**
+
+You may check the status of your analysis in the “GWAS Results” App. After you submit your analysis, it will be placed in the queue to run. The “GWAS Results” App will show the “Pending” status for your submitted analysis. Depending on the length of the queue, your analysis could start in the range of several minutes to several hours. After the analysis starts to run, the status will be changed to “In Progress”. Depending on your selection of cohort and variables, it could finish in the range of half an hour to three hours. You may close your browser after you submit the analysis.
+
+## **Why does the workspaces page give me an error?**
+
+Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
