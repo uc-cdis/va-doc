@@ -1,6 +1,6 @@
 # **VA Data Commons**
 The Veterans Affairs (VA) Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.
-<br>  
+<br>
 
 # Table of Contents
 - [**VA Data Commons**](#va-data-commons)
@@ -23,7 +23,7 @@ The Veterans Affairs (VA) Data Commons supports the research and analysis of US 
 ## **Login Page**
 Users will log in with their VA PIV credentials. Start by visiting the [login page](https://va.data-commons.org/login) and sign in with your organizational account. After successfully logging in, your username will appear in the upper right-hand corner of the page. Click this link for more information about using the [PIV login](https://www.oit.va.gov/resources/remote-access/cag/windows/index.cfm?#piv).
 
-Once logged in, the user will see there are several options in the upper right hand corner of the [home screen](https://va.data-commons.org/). In the blue bar at the top of the page, there is a link to VA Data Commons Documentation (the page you are currently reading), Email Support, your username and a log out button.  Below these options, there are tabs for the Workspace, the Apps, and the Profile pages.
+Once logged in, the user will see there are several options in the upper right hand corner of the [home screen](https://va.data-commons.org/). In the blue bar at the top of the page, there is a link to VA Data Commons Documentation (the page you are currently reading), Email Support, your username and a log out button. Below these options, there are tabs for the Workspace, the Apps, and the Profile pages.
 Clicking on the VA Data Commons logo in the upper left hand corner of the screen will always return you to the home page of the data commons.
 
 ### **VA Data Commons Documentation**
@@ -56,7 +56,7 @@ Concept Sets are a list of codes created by searching the standardized vocabular
 
 ![](_static/slide_10.png)
 
-Select Concept Sets in the menu and click the blue  box for “New Concept Set”.
+Select Concept Sets in the menu and click the blue box for “New Concept Set”.
 
 ![](_static/slide_11.png)
 
@@ -107,7 +107,7 @@ Click the blue box “Any Observation”, select “Import Concept Set” from t
 
 ![](_static/slide_21.png)
 
-Select  the Concept Set you just made. This establishes your Concept Set as inclusion criteria for your cohort.
+Select the Concept Set you just made. This establishes your Concept Set as inclusion criteria for your cohort.
 
 ![](_static/slide_22.png)
 
@@ -285,7 +285,7 @@ Use this App to view the status & results of submitted workflows. Click the arro
 
 * Pending - your analysis was placed in the queue to run, depending on the length of the queue your analysis could start in the range of several minutes to several hours
 * In Progress - your analysis is started and running, depending on your selection of cohort and variables it could finish in the range of half an hour to three hours
-* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact help at  [support@datacommons.io](mailto:support@datacommons.io)
+* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact help at [support@datacommons.io](mailto:support@datacommons.io)
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
 Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
