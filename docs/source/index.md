@@ -137,7 +137,7 @@ The “Export” tab provides a text version of how a cohort was created. Click 
 We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at craig.teerlink@va.gov
 
 ## **Gen3 GWAS**
-Use this app to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline.
+Use this app to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
 
 Genome-wide association studies (GWAS) help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
 
