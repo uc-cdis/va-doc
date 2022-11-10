@@ -167,7 +167,7 @@ You may also see a button to create a new cohort. This button will open a new ta
 
 **Step 2 Select harmonized variables for phenotypes and covariates**
 
-In this step, you will select the harmonized variables for your study. Please select all variables you wish to use in your model, including both covariates and phenotype. (Note:- population PCs are not included in this step)
+In this step, you will select the harmonized variables for your study. GWAS app provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all variables you wish to use in your model, including both covariates and phenotype. (Note:- population PCs are not included in this step)
 
 You may choose as many variables as you wish in this step, with a minimum of one, that will represent your outcome phenotype. You may remove them later in the pipeline. Currently, only continuous variables can be selected. To browse the table, please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
 
@@ -202,8 +202,8 @@ Please see here the phenotype chosen in step 3. To adjust please go back (at the
 MAF Cutoff-
 Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
 
-HARE dropdown menu-
-Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections. The codes are the HARE (Hharmonized Aancestry and Rrace/Eethnicity) codes.
+Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu-
+Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections.
 
 Imputation Score Cutoff-
 This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1)
