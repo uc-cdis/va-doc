@@ -1,5 +1,5 @@
 # **VA Data Commons**
-The Veterans Affairs (VA) Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.
+The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond. The data commons features GWAS analyses on harmonized data.
 <br>
 
 # Table of Contents
@@ -16,7 +16,7 @@ The Veterans Affairs (VA) Data Commons supports the research and analysis of US 
     - [**Steps to Generate a Cohort**](#steps-to-generate-a-cohort)
   - [**Gen3 GWAS**](#gen3-gwas)
   - [**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**](#genome-wide-association-studies-gwas-for-quantitative-phenotype)
-  - [**Genome-wide association studies (GWAS) for a case-control study**](#genome-wide-association-studies-gwas-for-a-case-control-study)
+  - [**Genome-wide association studies (GWAS) for a Case-Control study**](#genome-wide-association-studies-gwas-for-a-case-control-study)
   - [**GWAS Results**](#gwas-results)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
@@ -44,7 +44,7 @@ If you need help, the Email Support button allows you to send a message to our h
 Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
 
 ## **Apps**
-The [Apps page](https://va.data-commons.org/analysis) displays the option of two Apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
+The [Apps page](https://va.data-commons.org/analysis) displays the option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
 
 ## **OHDSI Atlas**
 ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
@@ -140,18 +140,19 @@ Cohort size will be displayed under the column “People”. Use View Reports to
 
 The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at craig.teerlink@va.gov
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [support@datacommons.io](mailto:support@datacommons.io).
+
 
 ## **Gen3 GWAS**
-Use this App to perform a high throughput GWAS on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
+Use this App to perform a high throughput Genome-wide association studies (GWAS) on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
 
-Genome-wide association studies (GWAS) help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
+GWAS help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
 
 We offer two types of GWAS analysis-
 
-**Genome-wide association studies (GWAS) for quantitative phenotype**
+**Genome-wide association studies (GWAS) for Quantitative phenotype**
 
-**Genome-wide association studies (GWAS) for a case-control study**
+**Genome-wide association studies (GWAS) for a Case-Control study**
 
 Each of these Gen3 GWAS options are available through the GWAS App, and consists of several steps. To navigate between the steps, click the Next or Previous box in the lower corners of the screen.
 
@@ -223,7 +224,7 @@ In this step, you may review the metadata selected for the study, give a name to
 
 Once your GWAS analysis is submitted, you can check the submission status and review the results in the “GWAS Results” App.
 
-## **Genome-wide association studies (GWAS) for a case-control study**
+## **Genome-wide association studies (GWAS) for a Case-Control study**
 Here, the genotypes of a roughly equal number of diseased (“cases”) and healthy (“controls”) people are compared to determine which genetic variants are associated with the disease. Cases are encoded as ‘1’ while controls are encoded as ‘0’ and a binary model is used.
 
 > :Tip: On each step of the workflow there is a tutorial, please click the icon to navigate through the tutorial 
@@ -294,7 +295,7 @@ Use this App to view the status & results of submitted workflows. Click the arro
 * Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact our help desk at [support@datacommons.io](mailto:support@datacommons.io)
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
-Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
 
 # Frequently Asked Questions
 
@@ -308,7 +309,7 @@ Data harmonization is the process of defining terms across different but similar
 
 ## **What will be included in the downloadable package at the end of a GWAS?**
 
-The package contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+The package contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
 
 ## **How long will my GWAS take?**
 
