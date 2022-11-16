@@ -294,7 +294,7 @@ Use this App to view the status & results of submitted workflows. Click the arro
 * Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact our help desk at [support@datacommons.io](mailto:support@datacommons.io)
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
-Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a tar.gz file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
 
 # Frequently Asked Questions
 
