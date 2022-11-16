@@ -44,7 +44,7 @@ If you need help, the Email Support button allows you to send a message to our h
 Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
 
 ## **Apps**
-The [Apps page](https://va.data-commons.org/analysis) displays the option of two Apps, OHDSI Atlas and Gen3 GWAS. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
+The [Apps page](https://va.data-commons.org/analysis) displays the option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
 
 ## **OHDSI Atlas**
 ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
