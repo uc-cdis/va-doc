@@ -140,7 +140,8 @@ Cohort size will be displayed under the column “People”. Use View Reports to
 
 The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If your phenotype and analysis variables are more complex than this documentation covers, please contact us for consultation at craig.teerlink@va.gov
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [support@datacommons.io](mailto:support@datacommons.io).
+
 
 ## **Gen3 GWAS**
 Use this App to perform a high throughput Genome-wide association studies (GWAS) on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
