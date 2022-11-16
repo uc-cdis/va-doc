@@ -309,7 +309,7 @@ Data harmonization is the process of defining terms across different but similar
 
 ## **What will be included in the downloadable package at the end of a GWAS?**
 
-The package contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, attrition tables, and per-chromosome GWAS summary statistics.
+The package contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
 
 ## **How long will my GWAS take?**
 
