@@ -15,8 +15,7 @@ The VA Data Commons supports the research and analysis of US military Veteran me
   - [**OHDSI Atlas**](#ohdsi-atlas)
     - [**Steps to Generate a Cohort**](#steps-to-generate-a-cohort)
   - [**Gen3 GWAS**](#gen3-gwas)
-  - [**Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**](#genome-wide-association-studies-gwas-for-quantitative-phenotype)
-  - [**Genome-wide association studies (GWAS) for a Case-Control study**](#genome-wide-association-studies-gwas-for-a-case-control-study)
+  - [**Genome-Wide Association Studies (GWAS) Steps**](#genome-wide-association-studies-gwas-steps)
   - [**GWAS Results**](#gwas-results)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
@@ -146,141 +145,87 @@ We expect that this documentation in addition to the OHDSI tutorials are suffici
 ## **Gen3 GWAS**
 Use this App to perform a high throughput Genome-wide association studies (GWAS) on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
 
-GWAS help scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations, called single nucleotide polymorphisms or SNPs (pronounced “snips”).
+GWAS helps scientists identify genes associated with a particular disease (or another trait). This method studies the entire set of DNA (the genome) of a large group of people, searching for small variations called single nucleotide polymorphisms or SNPs (pronounced “snips”).
 
-We offer two types of GWAS analysis-
-
-**Genome-wide association studies (GWAS) for Quantitative phenotype**
-
-**Genome-wide association studies (GWAS) for a Case-Control study**
-
-Each of these Gen3 GWAS options are available through the GWAS App, and consists of several steps. To navigate between the steps, click the Next or Previous box in the lower corners of the screen.
+GWAS App consists of several steps. To navigate between the steps, click the Next or Previous box in the lower corners of the screen.
 
 Each step displays the Attrition table at the top of the page. The Attrition table contains information about the total population size and sample size by ancestry for your selected cohorts and variables.
 
-For more information about the web functionality of each step, please refer to the Tutorial button. This tool will offer highlighted explanations on different parts of the page.
+For more information about the web functionality of each step, please refer to the button “New to GWAS? Get started here”. This tool will offer highlighted explanations on different parts of the page.
 
-When entering the App, a user must first select the type of GWAS from the choices in the box on the screen.
+## **Genome-Wide Association Studies (GWAS) Steps**
 
-## **Genome-Wide Association Studies (GWAS) for Quantitative Phenotype**
-Here, GWAS evaluates the statistical association between genetic variation and a continuous phenotype. A phenotype, also called a trait, can be any measured or observed property of an individual.
+> :Tip: On each step of the workflow there is a tutorial button called “New to GWAS? Get started here”, please click the button to navigate through the tutorial 
 
-> :Tip: On each step of the workflow there is a tutorial, please click the icon to navigate through the tutorial 
+**Step 1 Select Study Population**
 
-**Step 1 Select a cohort for GWAS**
+In this step, you will determine the study population. To begin, select the cohort that you would like to define your study population with. You may only see cohorts that you have access to. You may only select one cohort. The size of the cohort population is indicated on the right-hand side of the table. To browse the table, please scroll down to the bottom. To search for a cohort by name you may use the search box.
 
-In this step, you will determine the study population. To begin, select the cohort that you would like to define your study population with. You may only see cohorts that you have access to. Please select only one cohort. The size of the cohort population is indicated in the right hand side of the table. To browse the table please scroll down to the bottom.
+Once a cohort has been chosen, it will populate the attrition table above.
 
-You may also see a button to create a new cohort. This button will open a new tab in your browser, outside of the Gen3 GWAS App and send you to the OHDSI Atlas App.
+You may also see the button “Add a new cohort”. This button will open a new tab in your browser outside of the Gen3 GWAS App and send you to the OHDSI Atlas App, where you may create a new cohort.
 
-**Step 2 Select harmonized variables for phenotypes and covariates**
 
-In this step, you will select the harmonized variables for your study. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all variables you wish to use in your model, including both covariates and phenotype. (Note:- population PCs are not included in this step)
+**Step 2 Select Outcome Phenotype**
 
-You may choose as many variables as you wish in this step, with a minimum of one, that will represent your outcome phenotype. You may remove them later in the pipeline. Currently, only continuous variables can be selected. To browse the table, please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
+In this step, you will determine your outcome phenotype.
 
-**Step 3 Select which variable is your phenotype**
+There are two options available: Continuous Outcome Phenotype and Dichotomous Outcome Phenotype.
 
-In this step, you will determine your phenotype, using the selected variables from step 2. Please choose one of the selected variables to be the study’s phenotype.
+- **Continuous Outcome**
 
-Here you may choose your phenotype. All data are harmonized from different projects through the collaborative development of a data dictionary. In the right hand side of the table a missing % is calculated. This is to reflect how many subjects of the chosen population do not have this information available. To browse the table please scroll down to the bottom.To search the table please enter free text in the search box to search by cohort name.
+Here, you may choose your continuous phenotype. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select the outcome phenotype you wish to use in your model. All data are harmonized from different projects through the collaborative development of a data dictionary. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by phenotype name. In the plot near the table, you can learn more about the selected outcome distribution in the study population. After you select your outcome, click “Submit” to apply it for your model. After clicking ‘Submit’ you may see the selection in your attrition table.
 
-**Step 4 Add custom dichotomous covariates**
+- **Dichotomous Outcome**
 
-In this step, you may add custom dichotomous covariates by selecting two cohorts. This step is optional, and you may choose not to add any dichotomous covariate at all. You may combine a cohort for YES and a cohort for NO. Once cohorts are selected you may enter a name for the covariate. To commit the changes please press 'Add' at the bottom (You must ‘Add’ the variable before moving to the next screen if you want it to be a part of your analysis). You may repeat this action as many times as you need, or choose to not add any custom dichotomous covariates at all. Please note that all given names must be unique.
+Here, you may choose your dichotomous outcome phenotype. You can define your outcome by intersecting your study population with two other cohorts. Please enter the name for your outcome variable in the field “Phenotype name”. You can select your control (or No, 0) cohort in the field “Get Value 0”, and your case cohort (or Yes, 1) in the field “Get Value 1”. The Euler diagram on the right-hand side of the page shows the overlap between your chosen cohorts and study population, with numbers indicating the size of the overlap. After you define your outcome phenotype, click “Submit” to apply it to your model. It will then populate the attrition table and take you to the next step.
 
-As you add covariates you may see them populate on the right hand side of the screen as cards. The card contains your given name at the top of the card, and the ability to remove the created covariate at the bottom of the card.
+**Step 3 Select Covariate Phenotype**
 
-**Step 5 Set workflow parameters and remove unwanted covariates**
+This step is optional. In this step, you can add the harmonized continuous covariates or dichotomous covariates by clicking on the corresponding button.
 
-In this step, you will determine workflow parameters. Please adjust the number of population principal components (PCs) to control for population structure, minor allele frequency cutoff and imputation score cutoff. You may also remove unwanted covariates. Please also choose one ancestry population on which you would like to perform your study.
+- **Add Continuous Covariate**
 
-Number of PCs-
-Population Principal components (PCs) refer to linear combinations of genome-wide genotyping data to control for population structure/stratification (select up to 10 PCs)
+GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all covariates you wish to use in your model. You may choose as many covariates as you wish in this step. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by the covariate name. You can learn more about the selected covariate distribution in the study population in the plot near the table. After you select your covariate, click “Add” to apply it to your model. The covariate will then appear on the right-hand side of the screen and populate the attrition table. You can delete previously chosen covariates by clicking on the Delete icon.
 
-Covariates-
-Please review the chosen covariates. You may remove unwanted covariates, or go back (at the bottom of the page) to step 2 to choose different ones.
+- **Add Dichotomous Covariate**
 
-Dichotomous Covariates-
-Please review the created covariates. You may remove unwanted covariates, or go back (at the bottom of the page) to step 4 to adjust/add different ones.
+You may add custom dichotomous covariates by selecting two cohorts. Please enter the name for your covariate variable in the field “Covariate name”. You can select your control (or No, 0) cohort in the field “Get Value 0” and your case cohort (or Yes, 1) in the field “Get Value 1”. The Euler diagram on the right-hand side of the page shows the overlap between your chosen cohorts and study population with numbers indicating the size of the overlap. After you define your covariate, click “Add” to apply it to your model. The covariate will then appear on the right-hand side of the screen and populate the attrition table. You can delete previously created covariates by clicking on the Delete icon.
 
-Phenotype-
-Please see here the phenotype chosen in step 3. To adjust please go back (at the bottom of the page) to step 3 to choose a different one.
+**Step 4 Configure GWAS**
 
-Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu-
-Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections.
+In this step, you will determine workflow parameters. Please adjust the number of population principal components (PCs) to control for population structure, minor allele frequency cutoff, and imputation score cutoff. Please also choose one ancestry population on which you would like to perform your study.
 
-MAF Cutoff-
-Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
+**Number of PCs** - Population Principal components (PCs) refer to linear combinations of genome-wide genotyping data to control for population structure/stratification (select up to 10 PCs).
 
-Imputation Score Cutoff-
-This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1)
+**Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu** - Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections. You may not proceed with the analysis without a selection.
 
-**Step 6 Submit GWAS Study**
+**MAF Cutoff- Minor allele frequency (MAF)** is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5).
 
-In this step, you may review the metadata selected for the study, give a name to the study, and submit the GWAS for analysis. To commit any changes please go back to the relevant step.
+**Imputation Score Cutoff** - This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1).
+Once you have selected your values please press Next.
 
-**Check Submission Status and Review Results**
 
-Once your GWAS analysis is submitted, you can check the submission status and review the results in the “GWAS Results” App.
+**Step 5 Submission Modal**
 
-## **Genome-wide association studies (GWAS) for a Case-Control study**
-Here, the genotypes of a roughly equal number of diseased (“cases”) and healthy (“controls”) people are compared to determine which genetic variants are associated with the disease. Cases are encoded as ‘1’ while controls are encoded as ‘0’ and a binary model is used.
+Once step 4 is concluded, you may review your details in a modal. This will present to you the configurable selections made in every step of the GWAS flow.
 
-> :Tip: On each step of the workflow there is a tutorial, please click the icon to navigate through the tutorial 
+**Configurable values** - May be changed in step 4. 
 
-**Step 1 Select a case cohort for GWAS**
+**Covariates** - Please review the chosen covariates. To remove unwanted covariates, or change them, please go back (at the bottom of the page) to step 3.
 
-In this step, you will begin to define the study population. To begin, select the cohort that you would like to define as your study “cases” population. You may only see cohorts that you have access to. Please select only one cohort. The size of the cohort population is indicated in the right hand side of the table. To browse the table please scroll down to the bottom.
+**Outcome Phenotype** - Please see here the outcome phenotype chosen in step 2. To remake the selection please go back (at the bottom of the page) to step 2.
 
-You may also see a button to create a new cohort. This button will open a new tab in your browser, outside of the Gen3 GWAS App and send you to the OHDSI Atlas App.
+**Cohort** - This represents the study population you selected. To change your selection please go back to step 1.
 
-**Step 2 Select a control cohort for GWAS**
+Once you have reviewed your selections you must give a name to your analysis, followed by pressing ‘Submit’. 
 
-In this step, you will continue to define the study population. Please select the cohort that you would like to define as your study “control” population. You may only see cohorts that you have access to. Please select only one cohort. The size of the cohort population is indicated in the right hand side of the table. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name. To search the table please enter free text in the search box to search by cohort name.
+Once the job is submitted, a success message will then appear on the screen with the given job name and GWAS job id. You may progress in three different paths-
 
-You may also see a button to create a new cohort. This button will open a new tab in your browser, outside of the Gen3 GWAS App and send you to OHDSI Atlas App.
+1. See status - This option will send you to a different page where you may review the status of your job
+2. Submit new workflow - This option will send you to the beginning of the GWAS App where you may submit a different GWAS for analysis
+3. Submit similar (stay here) - This option will keep you at this page, where you may be able to submit some changes to the GWAS you already built and submit a similar job 
 
-**Step 3 Select harmonized variables for covariates**
-
-In this step, you may select covariates for your study. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. This step is optional, and you may choose not to add any covariate at all. Please choose as many covariates as you wish, you may remove them later in the pipeline. Currently, only continuous covariates are presented. All variables are harmonized. To browse the table please scroll down to the bottom. To search the table please enter free text in the search box to search by cohort name.
-
-**Step 4 Assess % missing in selected covariates**
-
-In this step, you can review the covariates selection based on % missing metrics. To adjust covariates please return to Step 3. If no covariates were chosen in step 3, this step will be empty.
-
-**Step 5 Add custom dichotomous covariates**
-
-In this step, you may add custom dichotomous covariates by selecting two cohorts. This step is optional, and you may choose not to add any dichotomous covariate at all. You may combine a cohort for YES and a cohort for NO. Once cohorts are selected you may enter a name for the covariate. To commit the changes please press 'Add' at the bottom (You must ‘Add’ the variable before moving to the next screen if you want it to be a part of your analysis). You may repeat this action as many times as you need, or choose to not add any custom dichotomous covariates at all. Please note that all given names must be unique.
-
-As you add covariates you may see them populate on the right hand side of the screen as cards. The card contains your given name at the top of the card and the ability to remove the created covariate at the bottom of the card.
-
-**Step 6 Set workflow parameters and remove unwanted covariates**
-
-In this step, you will determine workflow parameters. Please adjust the number of population principal components to control for population structure, minor allele frequency cutoff and imputation score cutoff. You may also remove unwanted covariates. Please also choose the ancestry population on which you would like to perform your study.
-
-Number of PCs-
-Population Principal components (PCs) refer to linear combinations of genome-wide genotyping data to control for population structure/stratification (select up to 10 PCs)
-
-Covariates-
-Please review the chosen covariates. You may remove unwanted covariates, or go back (at the bottom of the page) to step 2 to choose different ones.
-
-Dichotomous Covariates-
-Please review the created covariates. You may remove unwanted covariates, or go back (at the bottom of the page) to step 4 to adjust/add different ones.
-
-Harmonized Ancestry and Race/Ethnicity (HARE) dropdown menu-
-Please choose the ancestry population on which you would like to perform your study. The numbers appearing in the dropdown represent the population size of your study, considering all of your previous selections.
-HARE dropdowns-
-
-MAF Cutoff-
-Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population and can be used to filter out rare markers (scale of 0-0.5)
-
-Imputation Score Cutoff-
-This value reflects the quality of imputed SNPs and can be used to remove low-quality imputed markers (scale of 0-1)
-
-**Step 7 Submit GWAS Study**
-
-In this step, you may review the metadata selected for the study, give a name to the study, and submit the GWAS for analysis.
 
 **Check Submission Status and Review Results**
 
