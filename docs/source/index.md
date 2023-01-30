@@ -206,7 +206,7 @@ In this step, you will determine workflow parameters. Please adjust the number o
 Once you have selected your values please press Next.
 
 
-### **Step 5 Submission Modal**
+### **Submission Modal and Additional Options**
 
 Once step 4 is concluded, you may review your details in a modal. This will present to you the configurable selections made in every step of the GWAS flow.
 
