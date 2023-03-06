@@ -35,7 +35,7 @@ Clicking on the VA Data Commons logo in the upper left hand corner of the screen
 The button for VA Data Commons Documentation takes you to this page.
 
 ### **Email Support**
-If you need help, the Email Support button allows you to send a message to our help desk at [support@datacommons.io](mailto:support@datacommons.io). You may expect a response within 2 business days.
+If you need help, the Email Support button allows you to send a message to our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov). You may expect a response within 2 business days.
 
 
 # Data Access and Analysis
@@ -139,7 +139,7 @@ Cohort size will be displayed under the column “People”. Use View Reports to
 
 The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [support@datacommons.io](mailto:support@datacommons.io).
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [MVPLOI@va.gov](mailto:MVPLOI@va.gov).
 
 
 ## **Gen3 GWAS**
@@ -237,7 +237,7 @@ Use this App to view the status & results of submitted workflows. Click the arro
 
 * Pending - your analysis was placed in the queue to run, depending on the length of the queue your analysis could start in the range of several minutes to several hours
 * In Progress - your analysis is started and running, depending on your selection of cohort and variables it could finish in the range of half an hour to three hours
-* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact our help desk at [support@datacommons.io](mailto:support@datacommons.io)
+* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov)
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
 Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a zip file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
@@ -246,7 +246,7 @@ Once completed, you may download the results of the GWAS analysis from this menu
 
 ## **Where can I find more documentation on the OHDSI Atlas app?**
 
-ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [support@datacommons.io](mailto:support@datacommons.io)
+ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov)
 
 ## **What are harmonized variables?**
 
