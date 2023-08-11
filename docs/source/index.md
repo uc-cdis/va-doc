@@ -35,7 +35,7 @@ Clicking on the VA Data Commons logo in the upper left hand corner of the screen
 The button for VA Data Commons Documentation takes you to this page.
 
 ### **Email Support**
-If you need help, the Email Support button allows you to send a message to our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov). You may expect a response within 2 business days.
+If you need help, the Email Support button allows you to send a message to our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu). You may expect a response within 2 business days.
 
 
 # Data Access and Analysis
@@ -43,7 +43,7 @@ If you need help, the Email Support button allows you to send a message to our h
 Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
 
 ## **Apps**
-The [Apps page](https://va.data-commons.org/analysis) displays the option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to. 
+The [Apps page](https://va.data-commons.org/analysis) displays the option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to.
 
 ## **OHDSI Atlas**
 ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
@@ -139,7 +139,7 @@ Cohort size will be displayed under the column “People”. Use View Reports to
 
 The “Export” tab provides a text version of how a cohort was created. Click on the “Export” tab and then on the “Copy to clipboard” to copy the cohort’s information.
 
-We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [MVPLOI@va.gov](mailto:MVPLOI@va.gov).
+We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
 
 
 ## **Gen3 GWAS**
@@ -155,7 +155,7 @@ For more information about the web functionality of each step, please refer to t
 
 ## **Genome-Wide Association Studies (GWAS) Steps**
 
->**Tip**: On each step of the workflow there is a tutorial button called `"New to GWAS? Get started here"`, please click the button to navigate through the tutorial 
+>**Tip**: On each step of the workflow there is a tutorial button called `"New to GWAS? Get started here"`, please click the button to navigate through the tutorial
 
 ### **Step 1 Select Study Population**
 
@@ -210,7 +210,7 @@ Once you have selected your values please press Next.
 
 Once step 4 is concluded, you may review your details in a modal. This will present to you the configurable selections made in every step of the GWAS flow.
 
-- **Configurable values** - May be changed in step 4. 
+- **Configurable values** - May be changed in step 4.
 
 - **Covariates** - Please review the chosen covariates. To remove unwanted covariates, or change them, please go back (at the bottom of the page) to step 3.
 
@@ -218,13 +218,13 @@ Once step 4 is concluded, you may review your details in a modal. This will pres
 
 - **Cohort** - This represents the study population you selected. To change your selection please go back to step 1.
 
-Once you have reviewed your selections you must give a name to your analysis, followed by pressing ‘Submit’. 
+Once you have reviewed your selections you must give a name to your analysis, followed by pressing ‘Submit’.
 
 Once the job is submitted, a success message will then appear on the screen with the given job name and GWAS job id. You may progress in three different paths-
 
 1. See status - This option will send you to a different page where you may review the status of your job.
 2. Submit new workflow - This option will send you to the beginning of the GWAS App where you may submit a different GWAS for analysis.
-3. Submit similar (stay here) - This option will keep you at this page, where you may be able to submit some changes to the GWAS you already built and submit a similar job. 
+3. Submit similar (stay here) - This option will keep you at this page, where you may be able to submit some changes to the GWAS you already built and submit a similar job.
 
 
 ### **Check Submission Status and Review Results**
@@ -233,20 +233,24 @@ Once your GWAS analysis is submitted, you can check the Submission Status and Re
 
 ## **GWAS Results**
 
-Use this App to view the status & results of submitted workflows. Click the arrow in the Submitted Job Statuses box to activate the drop down menu and see the status of your analysis. This menu will display a history of your submitted jobs including the Run ID of your analysis, the start time, and the finish time when the run is completed. The menu will also show the status of your analysis:
+This app is used to view your job status and results.  
+
+The landing page displays a table of submitted jobs including the Run ID of your analysis, the workflow name, the start time, and the finish time.  The table may be sorted by any column by clicking on the up or down arrows next to the column name.  The "Manage columns" button in the upper right corner can be used to toggle the display of any column.
+
+Three additional columns are displayed by default: job status, details, and actions. The details columns lists additional information about your submitted job.  The Input button links to your GWAS job configuration options and the execution button presents information about the execution of your GWAS job including messages from log files.  If your job has completed successfully, you can review your output using the Results Button or download it directly from the Actions menu.  If you wish to re-run your job, you can do so by selecting "retry" from the Actions Menu.   The job status column provides information about the execution status of your job.  The displayed values are:
 
 * Pending - your analysis was placed in the queue to run, depending on the length of the queue your analysis could start in the range of several minutes to several hours
 * In Progress - your analysis is started and running, depending on your selection of cohort and variables it could finish in the range of half an hour to three hours
-* Failed - your analysis returned the error, it is advised to review/change your GWAS parameters or contact our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov)
+* Failed - your analysis returned the error, it is advised that you review/change your GWAS parameters which can be reviewed by clicking on the 'input' button under details and review the 'execution' of your job.   If you need further support, contact our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu)
 * Completed - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
-Once completed, you may download the results of the GWAS analysis from this menu. By pressing the ‘Download’ link a zip file will start downloading to your computer. Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
+ Once completed, you may review the output from your submission by clicking on the "Results" button in the details column. The results landing includes an interactive Manhattan chart, viewable QQ plot, and a searchable table of the Top Loci.  The Manhattan chart may be downloaded separately as a png format file and the Top Loci table as a tsv file.  A button at the top of the results page enables downloading of all results.  This will be a zip format file which will be downloaded to your computer.  Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following: Manhattan plot, QQ plot, metadata file containing all of your selections, your study's attrition table, and per-chromosome GWAS summary statistics.
 
 # Frequently Asked Questions
 
 ## **Where can I find more documentation on the OHDSI Atlas app?**
 
-ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [MVPLOI@va.gov](mailto:MVPLOI@va.gov)
+ATLAS was developed and is maintained by the OHDSI community. Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). If you need help, please reach out to our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu)
 
 ## **What are harmonized variables?**
 
