@@ -8,27 +8,55 @@ Documentation for VA is usually written in a markdown or google drive file. The 
 2. Convert markdown to rst format via pandocs
 3. Convert rst to HTML via sphinx
 
-## Setup
+## Requirements
 
-* Please follow [instructions](https://pandoc.org/installing.html) and install pandocs 
-* Please follow [instructions](https://www.sphinx-doc.org/en/master/usage/installation.html) and install sphinx
+### Preferred way
 
-## Steps
+Separate virtual environment is recommended for building documentation:
 
-1. Please save the documentation in markdown format to **va-doc/docs/source/index.md**
-2. Run the following command to convert **index.md** to and rst file **index.rst** ```pandoc index.md --from markdown --to rst -s -o index.rst```
-3. Now naviagte to **va-doc/docs** and run the following to convert rst file to HTML ```sphinx-build -b html source build```
-4. Now all the resulting HTML files will be stored to **va-doc/docs/build**
-5. You can open up **va-doc/docs/build/index.html** to check that the HTML generated looks correct
+* Create virtual environment in the cloned repository.
+```
+python3 -m venv .venv
+```
 
-## Adding generated documentation to qa/preprod/prod
+* Activate virtual environment.
+```
+source .venv/bin/activate
+```
 
-1. Navigate to the corresponding manifest repo. [here](https://github.com/uc-cdis/gitops-qa) for qa and [here](https://github.com/uc-cdis/cdis-manifest) for preprod/prod
-2. Go to the corresponding documentation repo for the data commons we're updating documentation for. Example: for preprod this would be **va-testing.data-commons.org/dashboard/Public/documentation**
-3. Remove all current files _including hidden_ in there via ```rm -rf * .[!.]*```
-4. Now copy all files _including hidden_ from **va-doc/docs/build** into the documentation directory
-5. Merge the changes into master
-6. Hop into the corresponding enviorment and run these commands:
-- ```cd cdis-manifest``` to switch to the manifest folder
-- ```git pull``` to get the latest changes
-- ```gen3 dashboard gitops-sync``` for documentation to be uploaded.
+* Install required packages.
+```
+python3 -m pip install -r requirements.txt
+```
+
+* Use sphinx:
+```
+sphinx-build -b html source build
+```
+
+### Alternative way
+
+* Use official [instruction](https://www.sphinx-doc.org/en/master/usage/installation.html)
+* Homebrew `sphinx-doc` package:
+```
+brew install sphinx-doc
+```
+
+## Usage
+
+1. Use `./docs/` as a main working directory.
+2. Write any documentation pages in the `source` directory. Use markdown format only.
+3. Run `make html` to generate build directory with documentation.
+4. Check the result of the build in the `build` directory. The `html/index.html` file is the main page of the documentation.
+5. Run `deactivate` when finished working with documentation.
+
+### Adding generated documentation to qa/preprod/prod
+
+1. Having either [gitops-qa](https://github.com/uc-cdis/gitops-qa) (for QA) or [cdis-manifest](https://github.com/uc-cdis/cdis-manifest) (for pre-prod/prod).
+2. Run `make html` to generate build directory with documentation.
+3. Copy the documentation to either `gitops-qa`/`cdis-manifest` repositories. For example, for QA, assuming that `gitops-qa` is in the same directory as `va-doc` repository, **WARNING** this step will remove all files in the destination directory and copy all files from the source directory:
+```
+make copy DEST_DIR=../../gitops-qa/qa-mickey.planx-pla.net/dashboard/Public/documentation/
+```
+4. Commit and push the changes to the repository, either `gitops-qa` or `cdis-manifest`.
+5. For next steps refer to the `dashboard` documentation: https://github.com/uc-cdis/cdis-wiki/blob/master/onboarding/services/dashboard.md.
