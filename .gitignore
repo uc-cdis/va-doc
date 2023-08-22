@@ -1,4 +1,4 @@
 **/.DS_Store
 .dccache
 docs/build/
-.venv/
+venv/
