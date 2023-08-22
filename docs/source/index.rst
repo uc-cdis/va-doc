@@ -76,8 +76,8 @@ The button for VA Data Commons Documentation takes you to this page.
 ~~~~~~~~~~~~~~~~~
 
 If you need help, the Email Support button allows you to send a message
-to our help desk at MVPLOI@va.gov. You may expect a response within 2
-business days.
+to our help desk at vadc@lists.uchicago.edu. You may expect a response
+within 2 business days.
 
 Data Access and Analysis
 ========================
@@ -142,12 +142,12 @@ vocabulary and selecting the set of terms for your analyses. Here you
 select all concepts (variables) that you would like to use for criteria
 that define your study population cohort.
 
-|image0|
+|image1|
 
 Select Concept Sets in the menu and click the blue box for “New Concept
 Set”.
 
-|image1|
+|image2|
 
 In the box above the tabs, enter a name for the Concept Set you are
 creating.
@@ -155,17 +155,17 @@ creating.
 Click the green box “Add concepts” to view the list of concept
 variables.
 
-|image2|
+|image3|
 
 Enter the concept name or code into the search bar to find relevant
 concept variables.
 
-|image3|
+|image4|
 
 Select desired concepts, click “Add To Concept Set”. Repeat Search and
 Add steps as needed, then click “Concept Sets”.
 
-|image4|
+|image5|
 
 Make sure all desired concepts are included, then click the save icon to
 the right of the name of the Concept Set.
@@ -173,7 +173,7 @@ the right of the name of the Concept Set.
 To add new concepts, please use the “Add Concepts” button again as
 described above.
 
-|image5|
+|image6|
 
 To delete the concepts from the concept set, select the concepts and
 click on the “Remove Selected” button, then click the save icon to save
@@ -189,37 +189,37 @@ defining the study population cohort. A cohort is defined as a Person
 with an entry and exit date. Thus, a person can be in a cohort multiple
 times if they meet the criteria.
 
-|image6|
+|image7|
 
 Select “Cohort Definitions” in the menu, you can begin to create a
 cohort by clicking the “New Cohort” button.
 
-|image7|
+|image8|
 
 In the boxes above and below the tabs, enter a name and description for
 the Cohort.
 
-|image8|
+|image9|
 
 To establish the duration for your cohort, click “+ Add Initial Event”,
 then in the dropdown menu click “Add Observation”.
 
-|image9|
+|image10|
 
 Click the blue box “Any Observation”, select “Import Concept Set” from
 the dropdown menu.
 
-|image10|
+|image11|
 
 Select the Concept Set you just made. This establishes your Concept Set
 as inclusion criteria for your cohort.
 
-|image11|
+|image12|
 
 To access the table in the MVP harmonization database, click “+ Add
 attribute…”, then click “Add Value as Number Criteria”.
 
-|image12|
+|image13|
 
 Select “Greater or Equal To”. In this specific case we added Heart
 Failure concept Set and entered value “2”. This will allow for the
@@ -237,7 +237,7 @@ subsequent analyses. Use the cohort definition to identify how many
 people are in the cohort. This is the initial number that will be used
 in the GWAS App when this cohort is selected.
 
-|image13|
+|image14|
 
 To complete the creation of the Cohort Definition, click “Generation”,
 then “Generate”.
@@ -246,7 +246,7 @@ Cohort size will be displayed under the column “People”. Use View
 Reports to see if you have inclusion criteria that causes cohort
 attrition.
 
-|image14|
+|image15|
 
 The “Export” tab provides a text version of how a cohort was created.
 Click on the “Export” tab and then on the “Copy to clipboard” to copy
@@ -254,7 +254,7 @@ the cohort’s information.
 
 We expect that this documentation in addition to the OHDSI tutorials are
 sufficient for most analyses that users will attempt. If you have any
-questions, please contact us at MVPLOI@va.gov.
+questions, please contact us at vadc@lists.uchicago.edu.
 
 **Gen3 GWAS**
 -------------
@@ -449,32 +449,58 @@ Status and Review the Results in the “GWAS Results” App.
 **GWAS Results**
 ----------------
 
-Use this App to view the status & results of submitted workflows. Click
-the arrow in the Submitted Job Statuses box to activate the drop down
-menu and see the status of your analysis. This menu will display a
-history of your submitted jobs including the Run ID of your analysis,
-the start time, and the finish time when the run is completed. The menu
-will also show the status of your analysis:
+This app is used to view your job status and results.
 
--  Pending - your analysis was placed in the queue to run, depending on
-   the length of the queue your analysis could start in the range of
+The landing page displays a table of submitted jobs including the Run ID
+of your analysis, the workflow name, the start time, and the finish
+time. The table may be sorted by any column by clicking on the up or
+down arrows next to the column name. The “Manage columns” button in the
+upper right corner can be used to toggle the display of any column.
+
+Three additional columns are displayed by default: job status, details,
+and actions. The details columns lists additional information about your
+submitted job. The Input button links to your GWAS job configuration
+options and the execution button presents information about the
+execution of your GWAS job including messages from log files. If your
+job has completed successfully, you can review your output using the
+Results Button or download it directly from the Actions menu. If you
+wish to re-run your job, you can do so by selecting “retry” from the
+Actions Menu. The job status column provides information about the
+execution status of your job. The displayed values are:
+
+-  **Pending** - your analysis was placed in the queue to run, depending
+   on the length of the queue your analysis could start in the range of
    several minutes to several hours
--  In Progress - your analysis is started and running, depending on your
-   selection of cohort and variables it could finish in the range of
-   half an hour to three hours
--  Failed - your analysis returned the error, it is advised to
-   review/change your GWAS parameters or contact our help desk at
-   MVPLOI@va.gov
--  Completed - your analysis was successfully completed and you may
+-  **In Progress** - your analysis has started and is running, depending
+   on your selection of cohort and variables it could finish in the
+   range of half an hour to three hours
+-  **Failed** - your analysis returned an error and could not run to
+   completion. Please review your GWAS parameters (can be reviewed by
+   clicking on the ‘input’ button under details and review the
+   ‘execution’ of your job) and error logs. If you need further support,
+   contact our help desk at vadc@lists.uchicago.edu
+-  **Completed** - your analysis was successfully completed and you may
    download the results of the GWAS analysis from this menu
 
-Once completed, you may download the results of the GWAS analysis from
-this menu. By pressing the ‘Download’ link a zip file will start
-downloading to your computer. Depending on your cohort and variables
+Once completed, you may review the output from your submission by
+clicking on the “Results” button in the details column. The results
+landing page includes an interactive Manhattan plot, viewable QQ plot,
+and a searchable table of the Top Loci. The Manhattan plot may be
+downloaded separately as a png format file and the Top Loci table as a
+tsv file. Clicking on the *Download All Results* button at the top of
+the results page will prompt the creation and download of your workflow
+results to your computer. Depending on your cohort and variables
 selection, the file size can vary in the range of 700MB up to 1.3GB. The
-file contains the following: Manhattan plot, QQ plot, metadata file
-containing all of your selections, your study’s attrition table, and
-per-chromosome GWAS summary statistics.
+file contains the following:
+
+-  Manhattan plot (.png)
+-  QQ plot (.png)
+-  100 top hits (.csv.gz)
+-  per-chromosome GWAS summary statistics (folder of .csv.gz’s)
+-  all hits below p-value 5e-8 (.csv.gz)
+-  your study’s attrition tables (folder of .csv’s)
+-  a metadata file containing all of your selections
+   (gwas_metadata.yaml)
 
 Frequently Asked Questions
 ==========================
@@ -489,7 +515,8 @@ OHDSI can be found `here <https://ohdsi.github.io/TheBookOfOhdsi/>`__.
 These resources contain a lot of useful information, particularly you
 might find it useful to read about `Cohort
 Definition <https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts>`__.
-If you need help, please reach out to our help desk at MVPLOI@va.gov
+If you need help, please reach out to our help desk at
+vadc@lists.uchicago.edu
 
 **What are harmonized variables?**
 ----------------------------------
@@ -535,18 +562,18 @@ Workspaces <https://gen3.org/products/workspaces/>`__ and `Data Analysis
 in a Gen3 Data
 Commons <https://gen3.org/resources/user/analyze-data/>`__.
 
-.. |image0| image:: _static/slide_10.png
-.. |image1| image:: _static/slide_11.png
-.. |image2| image:: _static/slide_13.png
-.. |image3| image:: _static/slide_14.png
-.. |image4| image:: _static/slide_15.png
-.. |image5| image:: _static/atlas_remove_concepts.png
-.. |image6| image:: _static/slide_17.png
-.. |image7| image:: _static/slide_18.png
-.. |image8| image:: _static/slide_19.png
-.. |image9| image:: _static/slide_20.png
-.. |image10| image:: _static/slide_21.png
-.. |image11| image:: _static/slide_22.png
-.. |image12| image:: _static/slide_23.png
-.. |image13| image:: _static/slide_26.png
-.. |image14| image:: _static/atlas_export_cohort.png
+.. |image1| image:: _static/slide_10.png
+.. |image2| image:: _static/slide_11.png
+.. |image3| image:: _static/slide_13.png
+.. |image4| image:: _static/slide_14.png
+.. |image5| image:: _static/slide_15.png
+.. |image6| image:: _static/atlas_remove_concepts.png
+.. |image7| image:: _static/slide_17.png
+.. |image8| image:: _static/slide_18.png
+.. |image9| image:: _static/slide_19.png
+.. |image10| image:: _static/slide_20.png
+.. |image11| image:: _static/slide_21.png
+.. |image12| image:: _static/slide_22.png
+.. |image13| image:: _static/slide_23.png
+.. |image14| image:: _static/slide_26.png
+.. |image15| image:: _static/atlas_export_cohort.png

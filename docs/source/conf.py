@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'va-doc'
-copyright = '2022, phyllis pischl, zuyi chen'
-author = 'phyllis pischl, zuyi chen'
+copyright = '2021, Center for Translational Data Science at the University of Chicago'
+author = 'CTDS staff'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '2.1.0'
 
 
 # -- General configuration ---------------------------------------------------
