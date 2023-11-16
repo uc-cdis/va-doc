@@ -17,6 +17,8 @@ The VA Data Commons supports the research and analysis of US military Veteran me
   - [**Gen3 GWAS**](#gen3-gwas)
   - [**Genome-Wide Association Studies (GWAS) Steps**](#genome-wide-association-studies-gwas-steps)
   - [**GWAS Results**](#gwas-results)
+    - [**Troubleshooting GWAS Errors**](#troubleshooting-gwas-errors)
+    - [**Data Update Disclaimer**](#data-update-disclaimer)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
   - [**What are harmonized variables?**](#what-are-harmonized-variables)
@@ -141,7 +143,6 @@ The “Export” tab provides a text version of how a cohort was created. Click 
 
 We expect that this documentation in addition to the OHDSI tutorials are sufficient for most analyses that users will attempt. If you have any questions, please contact us at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
 
-
 ## **Gen3 GWAS**
 Use this App to perform a high throughput Genome-wide association studies (GWAS) on MVP data using the University of Washington Genesis pipeline. For more information about the Genesis pipeline please refer to the publication ["Genetic association testing using the GENESIS R/Bioconductor package"](https://doi.org/10.1093/bioinformatics/btz567).
 
@@ -174,7 +175,7 @@ There are two options available: Continuous Outcome Phenotype and Dichotomous Ou
 
 - **Continuous Outcome**
 
-Here, you may choose your continuous phenotype. GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select the outcome phenotype you wish to use in your model. All data are harmonized from different projects through the collaborative development of a data dictionary. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by phenotype name. In the plot near the table, you can learn more about the selected outcome distribution in the study population. After you select your outcome, click “Submit” to apply it for your model. After clicking ‘Submit’ you may see the selection in your attrition table.
+Here, you may choose your continuous phenotype. GWAS App provides over 500 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select the outcome phenotype you wish to use in your model. All data are harmonized from different projects through the collaborative development of a data dictionary. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by phenotype name. In the plot near the table, you can learn more about the selected outcome distribution in the study population. After you select your outcome, click “Submit” to apply it for your model. After clicking ‘Submit’ you may see the selection in your attrition table.
 
 - **Dichotomous Outcome**
 
@@ -186,7 +187,7 @@ This step is optional. In this step, you can add the harmonized continuous covar
 
 - **Add Continuous Covariate**
 
-GWAS App provides over 5,000 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all covariates you wish to use in your model. You may choose as many covariates as you wish in this step. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by the covariate name. You can learn more about the selected covariate distribution in the study population in the plot near the table. After you select your covariate, click “Add” to apply it to your model. The covariate will then appear on the right-hand side of the screen and populate the attrition table. You can delete previously chosen covariates by clicking on the Delete icon.
+GWAS App provides over 500 variables for your selection, for example, height, weight, blood pressure, white blood cell, and other clinical observations. Please select all covariates you wish to use in your model. You may choose as many covariates as you wish in this step. To browse the table, please scroll down to the bottom.To search the table, please enter free text in the search box to search by the covariate name. You can learn more about the selected covariate distribution in the study population in the plot near the table. After you select your covariate, click “Add” to apply it to your model. The covariate will then appear on the right-hand side of the screen and populate the attrition table. You can delete previously chosen covariates by clicking on the Delete icon.
 
 - **Add Dichotomous Covariate**
 
@@ -231,17 +232,17 @@ Once the job is submitted, a success message will then appear on the screen with
 
 Once your GWAS analysis is submitted, you can check the Submission Status and Review the Results in the “GWAS Results” App.
 
-## **GWAS Results**
+## **GWAS Results**  
 
 This app is used to view your job status and results.  
 
 The landing page displays a table of submitted jobs including the Run ID of your analysis, the workflow name, the start time, and the finish time.  The table may be sorted by any column by clicking on the up or down arrows next to the column name.  The "Manage columns" button in the upper right corner can be used to toggle the display of any column.
 
-Three additional columns are displayed by default: job status, details, and actions. The details columns lists additional information about your submitted job.  The Input button links to your GWAS job configuration options and the execution button presents information about the execution of your GWAS job including messages from log files.  If your job has completed successfully, you can review your output using the Results Button or download it directly from the Actions menu.  If you wish to re-run your job, you can do so by selecting "retry" from the Actions Menu.   The job status column provides information about the execution status of your job.  The displayed values are:
+Three additional columns are displayed by default: job status, details, and actions. The details columns lists additional information about your submitted job.  The Input button links to your GWAS job configuration options and the execution button presents information about the execution of your GWAS job including messages from log files. The job status column provides information about the execution status of your job.  The displayed values are:
 
 * **Pending** - your analysis was placed in the queue to run, depending on the length of the queue your analysis could start in the range of several minutes to several hours
 * **In Progress** - your analysis has started and is running, depending on your selection of cohort and variables it could finish in the range of half an hour to three hours
-* **Failed** - your analysis returned an error and could not run to completion. Please review your GWAS parameters (can be reviewed by clicking on the ‘input’ button under details and review the ‘execution’ of your job) and error logs. If you need further support, contact our help desk at [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu)
+* **Failed** - your analysis returned an error and could not run to completion. Please see **[Troubleshooting GWAS Errors](#troubleshooting-gwas-errors)** below.  
 * **Completed** - your analysis was successfully completed and you may download the results of the GWAS analysis from this menu
 
  Once completed, you may review the output from your submission by clicking on the "Results" button in the details column. The results landing page includes an interactive Manhattan plot, viewable QQ plot, and a searchable table of the Top Loci.  The Manhattan plot may be downloaded separately as a png format file and the Top Loci table as a tsv file.  Clicking on the *Download All Results* button at the top of the results page will prompt the creation and download of your workflow results to your computer.   Depending on your cohort and variables selection, the file size can vary in the range of 700MB up to 1.3GB. The file contains the following:
@@ -253,6 +254,41 @@ Three additional columns are displayed by default: job status, details, and acti
 * all hits below p-value 5e-8 (.csv.gz)
 * your study’s attrition tables (folder of .csv’s)
 * a metadata file containing all of your selections (gwas_metadata.yaml)
+
+### **Troubleshooting GWAS Errors**
+
+In the Results Viewer App we are beginning to add meaningful error messages. The messages will appear in the execution logs and will be as follow:
+
+* [Failed run-null-model: Small cohort size or unbalanced cohort sizes](#failed-run-null-model-small-cohort-size-or-unbalanced-cohort-sizes).
+* [Failed run-plots: Small cohort size or unbalanced cohort sizes](#failed-run-plots-small-cohort-size-or-unbalanced-cohort-sizes)
+* [Failed run-single-assoc: Unbalanced cohort sizes](#failed-run-single-assoc-unbalanced-cohort-sizes)
+* [Failed generate-attrition-csv: Timeout occurred while fetching attrition table information. Please retry](#failed-generate-attrition-csv-timeout-occurred-while-fetching-attrition-table-information-please-retry)
+* [Step failed with an uncategorized error](#step-failed-with-an-uncategorized-error)
+
+#### **Failed run-null-model: Small cohort size or unbalanced cohort sizes**
+
+The cohort size chosen did not produce enough statistical power. As a rule of thumb, for continuous workflows a cohort size of about 700 or below may fail for this reason. If the user ran a dichotomous workflow, they should check that both the case and control cohort sizes are large enough, and are not vastly different in size (for example by two orders of magnitude or more). This can be checked through the attrition table in the GWAS App, prior to submission. The cohort size will reflect in the column where the chosen HARE is presented. A user may also see the choice they made in the GWAS Results by clicking on “Input”.
+
+#### **Failed run-plots: Small cohort size or unbalanced cohort sizes**
+
+The cohort size chosen did not produce enough statistical power. As a rule of thumb, for continuous workflows a cohort size of about 700 or below may fail for these reasons. If the user ran a dichotomous workflow, they should check that both the case and control cohort sizes are large enough, and are not vastly different in size (for example by two orders of magnitude or more). This can be checked through the attrition table in the GWAS App, prior to submission. The cohort size will reflect in the column where the chosen HARE is presented. A user may also see the choice they made in the GWAS Results by clicking on “Input”.
+
+#### **Failed run-single-assoc: Unbalanced cohort sizes**
+
+The cohort size chosen did not produce enough statistical power. As a rule of thumb, a cohort size of about 700 or below may fail for these reasons. If the user ran a dichotomous workflow, they should check that both the case and control cohort sizes are large enough. This can be checked through the attrition table in the GWAS App, prior to submission. The cohort size will reflect in the column where the chosen HARE is presented. A user may also see the choice they made in the GWAS Results by clicking on “Input”.
+
+
+#### **Failed generate-attrition-csv: Timeout occurred while fetching attrition table information. Please retry**
+
+A timeout error implies that an internal service was temporarily not available while fetching the information presented to the user on the UI. If you wish to re-run your job, you can do so by selecting “retry” from the Actions Menu.
+
+####  **Step failed with an uncategorized error**
+
+Many reasons can cause workflows to fail, and some of them may be transient. Please reach out to [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu) with any further questions. In your message please provide us with the serial name of your workflow and the step in which your GWAS failed (mentioned in your error message). A response should be expected with 2 business days.
+
+### **Data Update Disclaimer**
+
+Please note that we are constantly improving the GWAS pipeline. The retry action will re-run your analysis based on the most recent data available in the database and the most recent GWAS pipeline implemented. These may differ from the analysis you ran initially, and these differences might affect the outcome. For these reasons, the retry action is only applicable to failed workflows. If you have any questions, please feel free to contact us via email  [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
 
 # Frequently Asked Questions
 
