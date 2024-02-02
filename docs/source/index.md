@@ -18,7 +18,8 @@ The VA Data Commons supports the research and analysis of US military Veteran me
   - [**Genome-Wide Association Studies (GWAS) Steps**](#genome-wide-association-studies-gwas-steps)
   - [**GWAS Results**](#gwas-results)
     - [**Troubleshooting GWAS Errors**](#troubleshooting-gwas-errors)
-    - [**Data Update Disclaimer**](#data-update-disclaimer)
+  - [**MVP Data Dictionary**](#mvp-data-dictionary)
+  - [**Data Update Disclaimer**](#data-update-disclaimer)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [**Where can I find more documentation on the OHDSI Atlas app?**](#where-can-i-find-more-documentation-on-the-ohdsi-atlas-app)
   - [**What are harmonized variables?**](#what-are-harmonized-variables)
@@ -45,15 +46,17 @@ If you need help, the Email Support button allows you to send a message to our h
 Currently, workspaces are not available, and therefore you may see an error when attempting to log into this page. Generally, workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. Workspaces may include Jupyter notebooks and JupyterLab, Python and RStudio. For more information about the Gen3 Workspace, you may refer to [Gen3 Workspaces](https://gen3.org/products/workspaces/) and [Data Analysis in a Gen3 Data Commons](https://gen3.org/resources/user/analyze-data/).
 
 ## **Apps**
-The [Apps page](https://va.data-commons.org/analysis) displays the option of three Apps: OHDSI Atlas, Gen3 GWAS and GWAS Results. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to.
+The [Apps page](https://va.data-commons.org/analysis) displays the option of four apps: OHDSI Atlas, Gen3 GWAS, GWAS Results and Data Dictionary. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to.
 
 ## **OHDSI Atlas**
+
 ATLAS is an open source software application developed as a part of [OHDSI](https://www.ohdsi.org/) community intended to provide a unified interface to patient level data and analytics. Atlas software used to define cohorts, typically dichotomous variables, for analysis.
 
-ATLAS currently includes functionality for searching and navigating the vocabulary within the OMOP Common Data Model (CDM). In addition to the search and navigation capabilities, it also provides features to curate and export custom sets of concept identifiers for use in cohort definitions. These will automatically populate on the Gen3 GWAS App.
+ATLAS currently includes functionality for searching and navigating the vocabulary within the OMOP Common Data Model (CDM). Users may link to the MVP Data Dictionary to help with comprehension and curation of custom sets. In addition to the search and navigation capabilities, it also provides features to curate and export custom sets of concept identifiers for use in cohort definitions. These will automatically populate on the Gen3 GWAS App.
+
 In general, ATLAS is an analytics platform that can be used to perform analyses across one or more observational databases which have been standardized to the OMOP Common Data Model V5 and can facilitate exchange of analysis designs with any other organizations across the OHDSI community.
 
-Tutorials for the ATLAS tool can be found [here](https://github.com/OHDSI/Atlas/wiki) and the book about the OHDSI can be found [here](https://ohdsi.github.io/TheBookOfOhdsi/). These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). It is highly advisable that you familiarize yourself with these resources before proceeding. We have also provided a brief step-by-step guide to creating dichotomous variables here:
+Tutorials for the ATLAS tool can be found **[here](https://github.com/OHDSI/Atlas/wiki)** and also in the MVP data dictionary link.  The book about the OHDSI can be found **[here](https://ohdsi.github.io/TheBookOfOhdsi/)**. These resources contain a lot of useful information, particularly you might find it useful to read about [Cohort Definition](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#Cohorts). It is highly advisable that you familiarize yourself with these resources before proceeding.
 
 ### **Steps to Generate a Cohort**
 
@@ -286,7 +289,11 @@ A timeout error implies that an internal service was temporarily not available w
 
 Many reasons can cause workflows to fail, and some of them may be transient. Please reach out to [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu) with any further questions. In your message please provide us with the serial name of your workflow and the step in which your GWAS failed (mentioned in your error message). A response should be expected with 2 business days.
 
-### **Data Update Disclaimer**
+## **MVP Data Dictionary**
+
+The Data Dictionary App connects users to the static MVP data documentation which contains definitions, descriptions, and metadata for the variables and concepts available in the VADC Atlas OHDSI and GWAS apps. This is also available through a link from the VADC Atlas OHSDI page. When selecting data dictionary from the Apps browser, the user will be presented with a button.  This button directs the user to an outside tab.  Clicking on the MVP Data Dictionary button will automatically launch a popup explaining that the link takes the user away from VADC. Clicking the “OK” button will open the dictionary in a new tab of the user’s browser allowing toggling between the two sites. **Please note- the site can only be accessible within the VA's VPN.**
+
+## **Data Update Disclaimer**
 
 Please note that we are constantly improving the GWAS pipeline. The retry action will re-run your analysis based on the most recent data available in the database and the most recent GWAS pipeline implemented. These may differ from the analysis you ran initially, and these differences might affect the outcome. For these reasons, the retry action is only applicable to failed workflows. If you have any questions, please feel free to contact us via email  [vadc@lists.uchicago.edu](mailto:vadc@lists.uchicago.edu).
 
