@@ -1,3 +1,6 @@
+## UPDATE: This is now the legacy documentation repo for VADC. 
+The current documentation repo is https://github.com/uc-cdis/vadc-mkdocs (this is the one that is live on the platform)
+
 # How to Generate Documentation for VA data commons
 
 ## Overview
