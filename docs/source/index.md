@@ -48,7 +48,9 @@ Currently, workspaces are not available, and therefore you may see an error when
 ## **Apps**
 The [Apps page](https://va.data-commons.org/analysis) displays the option of four apps: OHDSI Atlas, Gen3 GWAS, GWAS Results and Data Dictionary. Using these Apps, a user may perform a genomic analysis on available data from projects that they have access to.
 
-Navigating into Apps for the first time will result in a pop up window requiring the user to select a  'Team project'.  Once selected, the user will see the Team project name in the upper right of all Apps pages and will have access to all team cohorts, GWAS runs and results.  Note that only the shared objects of the selected team are accessible.  If there is a need to create or access items for a different team, you will need to navigate back to the Apps page and make that selection.  
+Navigating into Apps for the first time will result in a pop up window requiring the user to select a 'Team project'.  Once selected, the user will see the Team project name in the upper right of all Apps pages and will have access to all team cohorts, GWAS runs and results.  Note that only the shared objects of the selected team are accessible.  If there is a need to create or access items for a different team, you will need to navigate back to the Apps page and make that selection.  
+
+This release also introduces two distinct user roles.  By default, users are assigned to the 'regular user' role.  This allows for the creation of a new cohort, generating the cohort so that it appears in the GWAS App for all members of the user's team, and the ability to copy a shared cohort definition.  A second role, the 'author user' allows cohorts to be defined, created, and shared with the GWAS app for ALL regular users.  The 'author user' also has authorization to view all regular user cohort definitions and copy any to make it a share cohort definition.    
 
 ## **OHDSI Atlas**
 
@@ -243,7 +245,7 @@ Once your GWAS analysis is submitted, you can check the Submission Status and Re
 
 This app is used to view your team's job statuses and results.  
 
-The landing page displays a table of submitted jobs including the Run ID of team analyses, the workflow name, the start time, and the finish time.  The table may be sorted by any column by clicking on the up or down arrows next to the column name.  The "Manage columns" button in the upper right corner can be used to toggle the display of any column.
+The landing page displays a table of submitted jobs including the Run ID of team analyses, the workflow name, the workflow owner, the start time, and the finish time.  The table may be sorted by any column by clicking on the up or down arrows next to the column name.  The "Manage columns" button in the upper right corner can be used to toggle the display of any column.
 
 Three additional columns are displayed by default: job status, details, and actions. The details columns lists additional information about your submitted job.  The Input button links to your GWAS job configuration options and the execution button presents information about the execution of your GWAS job including messages from log files. The job status column provides information about the execution status of your job.  The displayed values are:
 
