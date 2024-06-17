@@ -108,6 +108,23 @@ option of four apps: OHDSI Atlas, Gen3 GWAS, GWAS Results and Data
 Dictionary. Using these Apps, a user may perform a genomic analysis on
 available data from projects that they have access to.
 
+Navigating into Apps for the first time will result in a pop up window
+requiring the user to select a ‘Team project’. Once selected, the user
+will see the Team project name in the upper right of all Apps pages and
+will have access to all team cohorts, GWAS runs and results. Note that
+only the shared objects of the selected team are accessible. If there is
+a need to create or access items for a different team, you will need to
+navigate back to the Apps page and make that selection.
+
+This release also introduces two distinct user roles. By default, users
+are assigned to the ‘regular user’ role. This allows for the creation of
+a new cohort, generating the cohort so that it appears in the GWAS App
+for all members of the user’s team, and the ability to copy a shared
+cohort definition. A second role, the ‘author user’ allows cohorts to be
+defined, created, and shared with the GWAS app for ALL regular users.
+The ‘author user’ also has authorization to view all regular user cohort
+definitions and copy any to make it a share cohort definition.
+
 **OHDSI Atlas**
 ---------------
 
@@ -121,8 +138,7 @@ vocabulary within the OMOP Common Data Model (CDM). Users may link to
 the MVP Data Dictionary to help with comprehension and curation of
 custom sets. In addition to the search and navigation capabilities, it
 also provides features to curate and export custom sets of concept
-identifiers for use in cohort definitions. These will automatically
-populate on the Gen3 GWAS App.
+identifiers for use in cohort definitions.
 
 In general, ATLAS is an analytics platform that can be used to perform
 analyses across one or more observational databases which have been
@@ -260,6 +276,9 @@ The “Export” tab provides a text version of how a cohort was created.
 Click on the “Export” tab and then on the “Copy to clipboard” to copy
 the cohort’s information.
 
+Once created and saved, the cohort definition will be available to the
+user as well as other members of the team in the Gen3 GWAS app.
+
 We expect that this documentation in addition to the OHDSI tutorials are
 sufficient for most analyses that users will attempt. If you have any
 questions, please contact us at vadc@lists.uchicago.edu.
@@ -301,11 +320,14 @@ offer highlighted explanations on different parts of the page.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this step, you will determine the study population. To begin, select
-the cohort that you would like to define your study population with. You
-may only see cohorts that you have access to. You may only select one
-cohort. The size of the cohort population is indicated on the right-hand
-side of the table. To browse the table, please scroll down to the
-bottom. To search for a cohort by name you may use the search box.
+the cohort that you would like to define your study population with. By
+default, the first cohort displayed is the “CATCH ALL” which is
+available to all projects. Subsequent cohorts are those created for your
+specific project. You may only see cohorts that you have access to. You
+may only select one cohort. The size of the cohort population is
+indicated on the right-hand side of the table. To browse the table,
+please scroll down to the bottom. To search for a cohort by name you may
+use the search box.
 
 Once a cohort has been chosen, it will populate the attrition table
 above.
@@ -457,13 +479,14 @@ Status and Review the Results in the “GWAS Results” App.
 **GWAS Results**
 ----------------
 
-This app is used to view your job status and results.
+This app is used to view your team’s job statuses and results.
 
 The landing page displays a table of submitted jobs including the Run ID
-of your analysis, the workflow name, the start time, and the finish
-time. The table may be sorted by any column by clicking on the up or
-down arrows next to the column name. The “Manage columns” button in the
-upper right corner can be used to toggle the display of any column.
+of team analyses, the workflow name, the workflow owner, the start time,
+and the finish time. The table may be sorted by any column by clicking
+on the up or down arrows next to the column name. The “Manage columns”
+button in the upper right corner can be used to toggle the display of
+any column.
 
 Three additional columns are displayed by default: job status, details,
 and actions. The details columns lists additional information about your
